@@ -8,13 +8,13 @@ name: Journal Club — grade a review
 on:
   workflow_dispatch:
     inputs:
-      issue:        { description: "Claim issue number", required: true, type: string }
-      paper:        { description: "Paper ID (e.g. EEG-03)", required: true, type: string }
-      engagement:   { description: "Engagement 0-5", required: true, type: string }
-      comprehension:{ description: "Comprehension 0-5", required: true, type: string }
-      critical:     { description: "Critical appraisal 0-5", required: true, type: string }
-      action:       { description: "Action relevance 0-5", required: true, type: string }
-      originality:  { description: "Originality / non-AI 0-5", required: true, type: string }
+      issue: { description: "Claim issue number", required: true, type: string }
+      paper: { description: "Paper ID (e.g. EEG-03)", required: true, type: string }
+      engagement: { description: "Engagement 0-5", required: true, type: string }
+      comprehension: { description: "Comprehension 0-5", required: true, type: string }
+      critical: { description: "Critical appraisal 0-5", required: true, type: string }
+      action: { description: "Action relevance 0-5", required: true, type: string }
+      originality: { description: "Originality / non-AI 0-5", required: true, type: string }
 
 permissions:
   contents: write
@@ -50,7 +50,8 @@ jobs:
         run: |
           git config user.name  'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add ledger claims docs/data/status.json docs/data/ranking.json
+          printf '{"repo":"%s"}\n' "${{ github.repository }}" > docs/data/site.json
+          git add ledger claims docs/data/status.json docs/data/ranking.json docs/data/site.json
           git diff --cached --quiet && { echo "no changes"; exit 0; }
           git commit -m "jc: grade ${{ inputs.paper }} (issue #${{ inputs.issue }})"
           git push origin HEAD:${GITHUB_REF#refs/heads/}

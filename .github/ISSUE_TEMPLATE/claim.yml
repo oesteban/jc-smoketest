@@ -1,6 +1,8 @@
 name: Claim papers
 description: Claim up to 3 papers from the Journal Club pool to review.
-title: "[claim] <your name>"
+# The "Claim" buttons on the site prefill this title as "[claim] <Author> et al. <Year> - <Title>".
+# When opening the form manually, keep the "[claim] " prefix and add the paper(s) you're claiming.
+title: "[claim] "
 labels: ["claim"]
 body:
   - type: markdown
