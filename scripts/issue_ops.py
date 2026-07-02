@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Issue-ops dispatcher — the single entrypoint ``issue-ops.yml`` runs.
 
-Parses a GitHub ``issues`` (claim form) or ``issue_comment`` (`/claim` `/recall`
+Parses a GitHub ``issues`` (claim form) or ``issue_comment`` (`/claim` `/withdraw`
 `/submit` `/extend`) event, validates + applies it against freshly-loaded state,
 and writes:
 
@@ -22,13 +22,13 @@ from pathlib import Path
 import params
 import state
 
-# Organizers may act on any claim thread (e.g. administrative recall). Override
+# Organizers may act on any claim thread (e.g. administrative withdrawal). Override
 # with the ORGANIZERS env var (comma-separated GitHub handles).
 ORGANIZERS = set(filter(None, os.environ.get(
     "ORGANIZERS", "oesteban,guiomarniso").lower().split(",")))
 
 ID_RE = re.compile(r"\b([A-Za-z]+-R?\d+)\b")
-CMD_RE = re.compile(r"/(claim|recall|submit|extend)\s+([^\n]*)", re.IGNORECASE)
+CMD_RE = re.compile(r"/(claim|withdraw|submit|extend)\s+([^\n]*)", re.IGNORECASE)
 
 
 def _ids(segment: str) -> list[str]:
@@ -56,7 +56,7 @@ def handle_close(issue: int, author: str, claims: dict) -> dict:
     verb = "is" if len(held) == 1 else "are"
     body = (f"ℹ️ @{author} closing this issue does **not** release your claims — "
             f"{lst} {verb} still active and the 12-day deadline keeps running. "
-            f"To return a paper, comment `/recall <ID>`; to submit, `/submit <ID>`. "
+            f"To return a paper, comment `/withdraw <ID>`; to submit, `/submit <ID>`. "
             f"Reopen this issue to keep working.")
     return {"comment": body, "add_labels": [], "assignees": [], "issue": issue, "changed": False}
 
@@ -69,7 +69,7 @@ def handle_event(event: dict) -> dict:
     claims = state.load_claims()
 
     if name == "issues" and event.get("action") == "closed":
-        # Closing is non-destructive: we never recall on close (protects against an
+        # Closing is non-destructive: we never withdraw on close (protects against an
         # accidental close and preserves submitted/graded work). Just a heads-up if
         # the thread still holds in-flight papers.
         return handle_close(event["issue"]["number"],
@@ -120,15 +120,15 @@ def handle_event(event: dict) -> dict:
     now = state.now_utc()
     out = state.Outcome()
     accepted_modalities: set[str] = set()
-    attempted = False  # a claim/recall/submit command with ids was processed
+    attempted = False  # a claim/withdraw/submit command with ids was processed
     for cmd, ids in commands:
         if not ids:
             continue
         if cmd == "claim":
             r = state.apply_claim(pool, claims, claim, ids, now)
             attempted = True
-        elif cmd == "recall":
-            r = state.apply_recall(claim, ids)
+        elif cmd == "withdraw":
+            r = state.apply_withdraw(claim, ids)
             attempted = True
         elif cmd == "submit":
             r = state.apply_submit(claim, ids)
@@ -148,7 +148,7 @@ def handle_event(event: dict) -> dict:
     state.write_status(pool, claims)
 
     # close the thread once nothing is left for the participant to actively work on:
-    # a recall/rejected-claim leaves it empty, or the last active paper was submitted
+    # a withdrawal/rejected-claim leaves it empty, or the last active paper was submitted
     # (submitted papers are now with the organizers for grading, not the participant).
     active_left = sum(1 for r in claim["papers"].values() if r["state"] == "active")
     close_issue = attempted and active_left == 0

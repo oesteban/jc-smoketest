@@ -35,11 +35,11 @@ then comment **`/submit <ID>`** on your claim issue. Organizers verify the uploa
 | Comment | Effect |
 |---|---|
 | `/claim EEG-05` | claim another paper (if under your 3-claim cap) |
-| `/recall EEG-03` | return a paper to the pool — no penalty |
+| `/withdraw EEG-03` | return a paper to the pool — no penalty |
 | `/submit EEG-03` | mark it submitted for grading (after uploading via the Form) |
 | `/extend EEG-03` | one-time **+7 days** on the deadline |
 
 ## Reminders
 The system @-mentions you **3 days** and **1 day** before each deadline (GitHub emails you). At day 12
-an unsubmitted paper returns to the pool automatically — no penalty. Reply `/extend` or `/recall` if
+an unsubmitted paper returns to the pool automatically — no penalty. Reply `/extend` or `/withdraw` if
 you need to.

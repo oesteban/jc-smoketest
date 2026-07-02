@@ -30,7 +30,7 @@ let POOL = [], STATUS = {}, RANKING = { participants: [] };
 
 async function load() {
   // GitHub Pages serves these with max-age=600, so a plain fetch can show a claim/
-  // recall up to ~10 min stale. Cache-bust the volatile files so a reload is live.
+  // withdrawal up to ~10 min stale. Cache-bust the volatile files so a reload is live.
   // pool.json is static (only changes on reseed) → let it cache normally.
   const bust = u => `${u}?t=${Date.now()}`;
   const nostore = { cache: "no-store" };

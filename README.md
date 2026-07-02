@@ -12,7 +12,7 @@ the public reads is a pure, idempotent recompute — so every Action is safe to 
 | You do | Where | What happens |
 |---|---|---|
 | Claim ≤3 papers | open a **Claim papers** issue (or `/claim <ID>`) | a bot validates the cap + availability, sets 12-day deadlines, assigns the issue to you |
-| Manage a claim | comment `/recall <ID>`, `/submit <ID>`, `/extend <ID>` | recall frees the slot; submit marks it for grading; extend adds a one-time +7 days |
+| Manage a claim | comment `/withdraw <ID>`, `/submit <ID>`, `/extend <ID>` | withdraw frees the slot; submit marks it for grading; extend adds a one-time +7 days |
 | Get reminded | — | the daily sweep @-mentions you at day 9 and day 11; day 12 auto-returns the paper (no penalty) |
 | Submit a review | upload the annotated PDF to the **private Form** + `/submit <ID>` | organizers grade it against the 5-axis rubric; your score enters the leaderboard |
 

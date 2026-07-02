@@ -46,5 +46,5 @@ body:
     attributes:
       value: |
         After you submit, a bot will confirm your claims and deadlines in a comment.
-        Manage this thread with comments: `/claim <ID>`, `/recall <ID>`,
+        Manage this thread with comments: `/claim <ID>`, `/withdraw <ID>`,
         `/submit <ID>`, `/extend <ID>`.

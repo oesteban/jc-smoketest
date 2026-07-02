@@ -8,17 +8,17 @@ rationale is the initiative's `mechanics.md` and `grading-rubric.md`.
 
 - You may hold at most **3 active claims** at a time (across all your claim threads).
 - A paper **closes to new claims once 5 people hold it** — enough to expect ≥3 completed reviews.
-- Claiming is first-come; there is no queue. A closed paper re-opens if a claim is recalled or
+- Claiming is first-come; there is no queue. A closed paper re-opens if a claim is withdrawn or
   expires and its live-claim count drops below 5 while it still needs reviews.
 - Each claim runs for **12 days**.
 
 ## Turning a paper around
 
 - **Submit** the annotated PDF (via the private Form) and comment `/submit <ID>` before the deadline.
-- **Recall** (`/recall <ID>`) any time before the deadline — no penalty; it returns to the pool.
+- **Withdraw** (`/withdraw <ID>`) any time before the deadline — no penalty; it returns to the pool.
 - **Extend** (`/extend <ID>`) once for **+7 days**. One extension per claim.
 - **Expiry:** at day 12 the paper auto-returns to the pool — no penalty, zero points.
-- **Partial reviews are not accepted** — recall rather than submit an incomplete review.
+- **Partial reviews are not accepted** — withdraw rather than submit an incomplete review.
 
 ## What a review is
 
@@ -54,7 +54,7 @@ weighted score on the same 0–5 scale:
 participant_points = Σ over your floor-passing completed reviews ( weighted )
 ```
 
-Only floor-passing completed reviews count; recalls, expiries, and below-floor reviews earn nothing —
+Only floor-passing completed reviews count; withdrawals, expiries, and below-floor reviews earn nothing —
 so finishing **more good reviews** is the only way to climb. Tie-breakers, in order: (1) number of
 completed reviews, (2) mean score, (3) earliest to reach your current total. The board refreshes daily.
 Your standing in early August is a **major input (not the sole gate)** to Training-School invitations.

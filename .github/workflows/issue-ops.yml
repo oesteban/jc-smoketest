@@ -1,6 +1,6 @@
 name: Journal Club — issue ops
 
-# Processes claim forms and /claim /recall /submit /extend comments.
+# Processes claim forms and /claim /withdraw /submit /extend comments.
 # Follows the repo's mutate-and-push pattern (cf. the website calendar.yml):
 # run Python -> commit the updated state -> push back, with a rebase retry loop
 # so two issues processed at once never clobber each other.
@@ -23,7 +23,7 @@ concurrency:
 
 jobs:
   dispatch:
-    # never react to the bot's own actions (its comments, its auto-close on recall)
+    # never react to the bot's own actions (its comments, its auto-close on withdraw)
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:

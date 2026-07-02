@@ -39,7 +39,7 @@ def run(now: datetime | None = None) -> list[dict]:
             due = state.parse(rec["due_at"])
             remaining = _remaining_days(due, now)
 
-            if remaining <= 0:  # expire = auto-recall, no penalty, zero points
+            if remaining <= 0:  # expire = auto-withdraw, no penalty, zero points
                 rec["state"] = "expired"
                 touched.add(issue)
                 notifications.append({"issue": issue, "body":
@@ -58,7 +58,7 @@ def run(now: datetime | None = None) -> list[dict]:
                     f"⏰ @{who} your claim on `{pid}` is due in ~{n} day(s) "
                     f"(**{rec['due_at'][:10]}**). Not going to make it? Reply "
                     f"`/extend {pid}` for a one-time +{params.EXTENSION_DAYS} days, "
-                    f"or `/recall {pid}` to return it — no penalty."})
+                    f"or `/withdraw {pid}` to return it — no penalty."})
 
     for issue in touched:
         state.save_claim(claims[issue])

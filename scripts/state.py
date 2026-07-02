@@ -41,7 +41,7 @@ LEDGER_DIR = REPO / "ledger"
 # freed      : slot released, contributes nothing
 IN_FLIGHT = {"active", "submitted"}
 DONE = {"completed"}
-FREED = {"recalled", "expired", "returned"}
+FREED = {"withdrawn", "recalled", "expired", "returned"}  # "recalled": legacy pre-rename data
 ALL_STATES = IN_FLIGHT | DONE | FREED
 
 
@@ -228,7 +228,7 @@ def apply_claim(pool: dict, claims: dict, claim: dict, ids: list[str],
             continue
         if active_cap_count(claims, participant) >= params.ACTIVE_CLAIM_CAP:
             out.reject(f"`{pid}` — you already hold {params.ACTIVE_CLAIM_CAP} active claims; "
-                       f"recall one first.")
+                       f"withdraw one first.")
             continue
         due = now + timedelta(days=params.DEADLINE_DAYS)
         claim["papers"][pid] = {
@@ -246,7 +246,7 @@ def apply_claim(pool: dict, claims: dict, claim: dict, ids: list[str],
     return out
 
 
-def apply_recall(claim: dict, ids: list[str]) -> Outcome:
+def apply_withdraw(claim: dict, ids: list[str]) -> Outcome:
     out = Outcome()
     for raw in ids:
         pid = raw.strip().upper()
@@ -254,7 +254,7 @@ def apply_recall(claim: dict, ids: list[str]) -> Outcome:
         if not rec or rec["state"] not in IN_FLIGHT:
             out.reject(f"`{pid}` — you have no active claim on this paper.")
             continue
-        rec["state"] = "recalled"
+        rec["state"] = "withdrawn"
         out.accept(f"`{pid}` returned to the pool — no penalty. Slot freed.")
     return out
 
@@ -282,7 +282,7 @@ def apply_extend(claim: dict, ids: list[str], now: datetime) -> Outcome:
             continue
         if rec["extended"]:
             out.reject(f"`{pid}` — you have already used your one-time extension. "
-                       f"Recall it if you cannot finish.")
+                       f"Withdraw it if you cannot finish.")
             continue
         due = parse(rec["due_at"]) + timedelta(days=params.EXTENSION_DAYS)
         rec["due_at"] = iso(due)

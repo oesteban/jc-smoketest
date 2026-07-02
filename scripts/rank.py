@@ -3,7 +3,7 @@
 
     participant_points = Σ over floor-passing completed reviews ( weighted )
 
-Only floor-passing reviews contribute; recalls, expiries, and below-floor reviews
+Only floor-passing reviews contribute; withdrawals, expiries, and below-floor reviews
 count zero. Tie-breakers, in order: (1) number of completed reviews, (2) mean
 weighted score, (3) earliest to reach the current point total. Because the whole
 board is recomputed from the ledger every time, re-running never double-counts and
