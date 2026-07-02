@@ -3,6 +3,19 @@
     "id": "EEG-R1",
     "modality": "EEG",
     "level": 0,
+    "title": "Source-based artifact-rejection techniques for TMS-EEG.",
+    "first_author": "T. Mutanen",
+    "year": 2022,
+    "doi": "10.1016/j.jneumeth.2022.109693",
+    "url": "https://doi.org/10.1016/j.jneumeth.2022.109693",
+    "venue": "Journal of Neuroscience Methods",
+    "s2_id": "1272f0d7b82ff90970c3365f7f6b85c355f24b13",
+    "citation_count": 25
+  },
+  {
+    "id": "EEG-R2",
+    "modality": "EEG",
+    "level": 0,
     "title": "EEG Integrated Platform Lossless (EEG-IP-L) pre-processing pipeline for objective signal quality assessment incorporating data annotation and blind source separation.",
     "first_author": "J. Desjardins",
     "year": 2020,
@@ -13,7 +26,7 @@
     "citation_count": 60
   },
   {
-    "id": "EEG-R2",
+    "id": "EEG-R3",
     "modality": "EEG",
     "level": 0,
     "title": "A Comprehensive Survey of EEG Preprocessing Methods for Cognitive Load Assessment",
@@ -26,7 +39,7 @@
     "citation_count": 29
   },
   {
-    "id": "EEG-R3",
+    "id": "EEG-R4",
     "modality": "EEG",
     "level": 0,
     "title": "Automated pipeline for EEG artifact reduction (APPEAR) recorded during fMRI",
@@ -81,6 +94,19 @@
     "id": "EEG-04",
     "modality": "EEG",
     "level": 1,
+    "title": "Electric Fields of the Brain: The Neurophysics of EEG",
+    "first_author": "J. Fermaglich",
+    "year": 1982,
+    "doi": "10.1001/jama.1982.03320380071046",
+    "url": "https://doi.org/10.1001/jama.1982.03320380071046",
+    "venue": "",
+    "s2_id": "cb3432a86fda80bacfa9b3389e732057df6f7a9a",
+    "citation_count": 2760
+  },
+  {
+    "id": "EEG-05",
+    "modality": "EEG",
+    "level": 1,
     "title": "Independent Component Analysis of Electroencephalographic Data",
     "first_author": "S. Makeig",
     "year": 1995,
@@ -91,7 +117,7 @@
     "citation_count": 2370
   },
   {
-    "id": "EEG-05",
+    "id": "EEG-06",
     "modality": "EEG",
     "level": 1,
     "title": "A review of classification algorithms for EEG-based brain–computer interfaces: a 10 year update",
@@ -102,19 +128,6 @@
     "venue": "Journal of Neural Engineering",
     "s2_id": "0c8ce4f11c00c78b04151d2526a812008ca7a764",
     "citation_count": 1970
-  },
-  {
-    "id": "EEG-06",
-    "modality": "EEG",
-    "level": 1,
-    "title": "Independent Component Analysis Using an Extended Infomax Algorithm for Mixed Subgaussian and Supergaussian Sources",
-    "first_author": "Te-Won Lee",
-    "year": 1999,
-    "doi": "10.1162/089976699300016719",
-    "url": "https://doi.org/10.1162/089976699300016719",
-    "venue": "Neural Computation",
-    "s2_id": "642f41bc18b36dead2b85e45a93bcfb8379224a2",
-    "citation_count": 1969
   },
   {
     "id": "EEG-07",
@@ -159,14 +172,14 @@
     "id": "EEG-10",
     "modality": "EEG",
     "level": 1,
-    "title": "The brain imaging data structure, a format for organizing and describing outputs of neuroimaging experiments",
-    "first_author": "Krzysztof J. Gorgolewski",
-    "year": 2016,
-    "doi": "10.1038/sdata.2016.44",
-    "url": "https://doi.org/10.1038/sdata.2016.44",
-    "venue": "Scientific Data",
-    "s2_id": "b3b5993819f5dddeeff1a99c43545d1133296881",
-    "citation_count": 1647
+    "title": "EEG source imaging.",
+    "first_author": "C. Michel",
+    "year": 2004,
+    "doi": "10.1016/j.clinph.2004.06.001",
+    "url": "https://doi.org/10.1016/j.clinph.2004.06.001",
+    "venue": "Clinical Neurophysiology",
+    "s2_id": "260690b07b9e738d95acd611da957bb8a3583168",
+    "citation_count": 1740
   },
   {
     "id": "EEG-11",
@@ -289,6 +302,19 @@
     "id": "EEG-20",
     "modality": "EEG",
     "level": 1,
+    "title": "A multiple source approach to the correction of eye artifacts.",
+    "first_author": "P. Berg",
+    "year": 1994,
+    "doi": "10.1016/0013-4694(94)90094-9",
+    "url": "https://doi.org/10.1016/0013-4694(94)90094-9",
+    "venue": "Electroencephalography and Clinical Neurophysiology",
+    "s2_id": "d7627152d0ba4b222b48c7a7fcef0fc442ced3f7",
+    "citation_count": 750
+  },
+  {
+    "id": "EEG-21",
+    "modality": "EEG",
+    "level": 1,
     "title": "Automatic Classification of Artifactual ICA-Components for Artifact Removal in EEG Signals",
     "first_author": "I. Winkler",
     "year": 2011,
@@ -299,7 +325,7 @@
     "citation_count": 747
   },
   {
-    "id": "EEG-21",
+    "id": "EEG-22",
     "modality": "EEG",
     "level": 1,
     "title": "Removal of Artifacts from EEG Signals: A Review",
@@ -312,7 +338,7 @@
     "citation_count": 742
   },
   {
-    "id": "EEG-22",
+    "id": "EEG-23",
     "modality": "EEG",
     "level": 1,
     "title": "The Harvard Automated Processing Pipeline for Electroencephalography (HAPPE): Standardized Processing Software for Developmental and High-Artifact Data",
@@ -325,7 +351,7 @@
     "citation_count": 461
   },
   {
-    "id": "EEG-23",
+    "id": "EEG-24",
     "modality": "EEG",
     "level": 1,
     "title": "Methods for artifact detection and removal from scalp EEG: A review",
@@ -338,7 +364,7 @@
     "citation_count": 412
   },
   {
-    "id": "EEG-24",
+    "id": "EEG-25",
     "modality": "EEG",
     "level": 1,
     "title": "A practical guide to the selection of independent components of the electroencephalogram for artifact correction.",
@@ -351,7 +377,7 @@
     "citation_count": 401
   },
   {
-    "id": "EEG-25",
+    "id": "EEG-26",
     "modality": "EEG",
     "level": 1,
     "title": "Semi-automatic identification of independent components representing EEG artifact.",
@@ -364,7 +390,7 @@
     "citation_count": 371
   },
   {
-    "id": "EEG-26",
+    "id": "EEG-27",
     "modality": "EEG",
     "level": 1,
     "title": "EEG is better left alone",
@@ -377,7 +403,7 @@
     "citation_count": 217
   },
   {
-    "id": "EEG-27",
+    "id": "EEG-28",
     "modality": "EEG",
     "level": 1,
     "title": "The Maryland Analysis of Developmental EEG (MADE) Pipeline",
@@ -390,7 +416,7 @@
     "citation_count": 194
   },
   {
-    "id": "EEG-28",
+    "id": "EEG-29",
     "modality": "EEG",
     "level": 1,
     "title": "FORCe: Fully Online and Automated Artifact Removal for Brain-Computer Interfacing",
@@ -403,7 +429,7 @@
     "citation_count": 175
   },
   {
-    "id": "EEG-29",
+    "id": "EEG-30",
     "modality": "EEG",
     "level": 1,
     "title": "DISCOVER-EEG: an open, fully automated EEG pipeline for biomarker discovery in clinical neuroscience",
@@ -416,7 +442,7 @@
     "citation_count": 58
   },
   {
-    "id": "EEG-30",
+    "id": "EEG-31",
     "modality": "EEG",
     "level": 1,
     "title": "PIPEMAT-RS: Development and Validation of a Standardized MATLAB Pipeline for Resting-State EEG Preprocessing.",
@@ -445,19 +471,6 @@
     "id": "MEG-R2",
     "modality": "MEG",
     "level": 0,
-    "title": "Source-based artifact-rejection techniques for TMS-EEG.",
-    "first_author": "T. Mutanen",
-    "year": 2022,
-    "doi": "10.1016/j.jneumeth.2022.109693",
-    "url": "https://doi.org/10.1016/j.jneumeth.2022.109693",
-    "venue": "Journal of Neuroscience Methods",
-    "s2_id": "1272f0d7b82ff90970c3365f7f6b85c355f24b13",
-    "citation_count": 25
-  },
-  {
-    "id": "MEG-R3",
-    "modality": "MEG",
-    "level": 0,
     "title": "Artificial neural networks for magnetoencephalography: a review of an emerging field",
     "first_author": "Arthur Dehgan",
     "year": 2025,
@@ -471,19 +484,6 @@
     "id": "MEG-01",
     "modality": "MEG",
     "level": 1,
-    "title": "An Information-Maximization Approach to Blind Separation and Blind Deconvolution",
-    "first_author": "A. Bell",
-    "year": 1995,
-    "doi": "10.1162/neco.1995.7.6.1129",
-    "url": "https://doi.org/10.1162/neco.1995.7.6.1129",
-    "venue": "Neural Computation",
-    "s2_id": "1d7d0e8c4791700defd4b0df82a26b50055346e0",
-    "citation_count": 9777
-  },
-  {
-    "id": "MEG-02",
-    "modality": "MEG",
-    "level": 1,
     "title": "Magnetoencephalography-theory, instrumentation, and applications to noninvasive studies of the working human brain",
     "first_author": "M. Hämäläinen",
     "year": 1993,
@@ -494,20 +494,7 @@
     "citation_count": 4854
   },
   {
-    "id": "MEG-03",
-    "modality": "MEG",
-    "level": 1,
-    "title": "Beamforming: a versatile approach to spatial filtering",
-    "first_author": "B. D. Van",
-    "year": 1988,
-    "doi": "10.1109/53.665",
-    "url": "https://doi.org/10.1109/53.665",
-    "venue": "IEEE ASSP Magazine",
-    "s2_id": "cc1c0876c066b2e11bad73c71c27632872a68ae0",
-    "citation_count": 4264
-  },
-  {
-    "id": "MEG-04",
+    "id": "MEG-02",
     "modality": "MEG",
     "level": 1,
     "title": "Standardized low-resolution brain electromagnetic tomography (sLORETA): technical details.",
@@ -520,7 +507,7 @@
     "citation_count": 3639
   },
   {
-    "id": "MEG-05",
+    "id": "MEG-03",
     "modality": "MEG",
     "level": 1,
     "title": "MEG and EEG data analysis with MNE-Python",
@@ -533,7 +520,7 @@
     "citation_count": 3610
   },
   {
-    "id": "MEG-06",
+    "id": "MEG-04",
     "modality": "MEG",
     "level": 1,
     "title": "Brainstorm: A User-Friendly Application for MEG/EEG Analysis",
@@ -546,20 +533,7 @@
     "citation_count": 3607
   },
   {
-    "id": "MEG-07",
-    "modality": "MEG",
-    "level": 1,
-    "title": "Electric Fields of the Brain: The Neurophysics of EEG",
-    "first_author": "J. Fermaglich",
-    "year": 1982,
-    "doi": "10.1001/jama.1982.03320380071046",
-    "url": "https://doi.org/10.1001/jama.1982.03320380071046",
-    "venue": "",
-    "s2_id": "cb3432a86fda80bacfa9b3389e732057df6f7a9a",
-    "citation_count": 2760
-  },
-  {
-    "id": "MEG-08",
+    "id": "MEG-05",
     "modality": "MEG",
     "level": 1,
     "title": "Localization of brain electrical activity via linearly constrained minimum variance spatial filtering",
@@ -572,20 +546,7 @@
     "citation_count": 2610
   },
   {
-    "id": "MEG-09",
-    "modality": "MEG",
-    "level": 1,
-    "title": "Guidelines for using human event-related potentials to study cognition: recording standards and publication criteria.",
-    "first_author": "T. Picton",
-    "year": 2000,
-    "doi": "10.1111/1469-8986.3720127",
-    "url": "https://doi.org/10.1111/1469-8986.3720127",
-    "venue": "Psychophysiology",
-    "s2_id": "4297e34b99c7a65917a139bec56e6325d6e3585d",
-    "citation_count": 2203
-  },
-  {
-    "id": "MEG-10",
+    "id": "MEG-06",
     "modality": "MEG",
     "level": 1,
     "title": "Improved Localizadon of Cortical Activity by Combining EEG and MEG with MRI Cortical Surface Reconstruction: A Linear Approach",
@@ -598,7 +559,7 @@
     "citation_count": 2033
   },
   {
-    "id": "MEG-11",
+    "id": "MEG-07",
     "modality": "MEG",
     "level": 1,
     "title": "Interpreting magnetic fields of the brain: minimum norm estimates",
@@ -611,7 +572,7 @@
     "citation_count": 1923
   },
   {
-    "id": "MEG-12",
+    "id": "MEG-08",
     "modality": "MEG",
     "level": 1,
     "title": "MNE software for processing MEG and EEG data",
@@ -624,20 +585,7 @@
     "citation_count": 1907
   },
   {
-    "id": "MEG-13",
-    "modality": "MEG",
-    "level": 1,
-    "title": "EEG source imaging.",
-    "first_author": "C. Michel",
-    "year": 2004,
-    "doi": "10.1016/j.clinph.2004.06.001",
-    "url": "https://doi.org/10.1016/j.clinph.2004.06.001",
-    "venue": "Clinical Neurophysiology",
-    "s2_id": "260690b07b9e738d95acd611da957bb8a3583168",
-    "citation_count": 1740
-  },
-  {
-    "id": "MEG-14",
+    "id": "MEG-09",
     "modality": "MEG",
     "level": 1,
     "title": "Spatiotemporal signal space separation method for rejecting nearby interference in MEG measurements",
@@ -650,7 +598,7 @@
     "citation_count": 1563
   },
   {
-    "id": "MEG-15",
+    "id": "MEG-10",
     "modality": "MEG",
     "level": 1,
     "title": "Signal-space projection method for separating MEG or EEG into components",
@@ -663,20 +611,7 @@
     "citation_count": 800
   },
   {
-    "id": "MEG-16",
-    "modality": "MEG",
-    "level": 1,
-    "title": "A multiple source approach to the correction of eye artifacts.",
-    "first_author": "P. Berg",
-    "year": 1994,
-    "doi": "10.1016/0013-4694(94)90094-9",
-    "url": "https://doi.org/10.1016/0013-4694(94)90094-9",
-    "venue": "Electroencephalography and Clinical Neurophysiology",
-    "s2_id": "d7627152d0ba4b222b48c7a7fcef0fc442ced3f7",
-    "citation_count": 750
-  },
-  {
-    "id": "MEG-17",
+    "id": "MEG-11",
     "modality": "MEG",
     "level": 1,
     "title": "MEG/EEG Group Analysis With Brainstorm",
@@ -689,7 +624,7 @@
     "citation_count": 200
   },
   {
-    "id": "MEG-18",
+    "id": "MEG-12",
     "modality": "MEG",
     "level": 1,
     "title": "Brainstorm Pipeline Analysis of Resting-State Data From the Open MEG Archive",
@@ -728,33 +663,7 @@
     "citation_count": 53
   },
   {
-    "id": "FMRI-R3",
-    "modality": "fMRI",
-    "level": 0,
-    "title": "The multiverse of data preprocessing and analysis in graph-based fMRI: A systematic literature review of analytical choices fed into a decision support tool for informed analysis",
-    "first_author": "Daniel Kristanto",
-    "year": 2024,
-    "doi": "10.1101/2024.01.14.575565",
-    "url": "https://doi.org/10.1101/2024.01.14.575565",
-    "venue": "bioRxiv",
-    "s2_id": "f084fb8a402efe127aff11bf11f556e1d614a724",
-    "citation_count": 16
-  },
-  {
     "id": "FMRI-01",
-    "modality": "fMRI",
-    "level": 1,
-    "title": "Advances in functional and structural MR image analysis and implementation as FSL.",
-    "first_author": "Stephen M. Smith",
-    "year": 2004,
-    "doi": "10.1016/j.neuroimage.2004.07.051",
-    "url": "https://doi.org/10.1016/j.neuroimage.2004.07.051",
-    "venue": "NeuroImage",
-    "s2_id": "1a77e19441f3a0e030998fb2d11d9dd774582403",
-    "citation_count": 13998
-  },
-  {
-    "id": "FMRI-02",
     "modality": "fMRI",
     "level": 1,
     "title": "AFNI: software for analysis and visualization of functional magnetic resonance neuroimages.",
@@ -767,7 +676,7 @@
     "citation_count": 11180
   },
   {
-    "id": "FMRI-03",
+    "id": "FMRI-02",
     "modality": "fMRI",
     "level": 1,
     "title": "Spurious but systematic correlations in functional connectivity MRI networks arise from subject motion",
@@ -780,7 +689,7 @@
     "citation_count": 7383
   },
   {
-    "id": "FMRI-04",
+    "id": "FMRI-03",
     "modality": "fMRI",
     "level": 1,
     "title": "Spontaneous fluctuations in brain activity observed with functional magnetic resonance imaging",
@@ -793,46 +702,7 @@
     "citation_count": 6725
   },
   {
-    "id": "FMRI-05",
-    "modality": "fMRI",
-    "level": 1,
-    "title": "Measuring the thickness of the human cerebral cortex from magnetic resonance images.",
-    "first_author": "B. Fischl",
-    "year": 2000,
-    "doi": "10.1073/pnas.200033797",
-    "url": "https://doi.org/10.1073/pnas.200033797",
-    "venue": "Proceedings of the National Academy of Sciences of the United States of America",
-    "s2_id": "d8c44b1cd38a27c78af9c9444d8be019e2f26417",
-    "citation_count": 5958
-  },
-  {
-    "id": "FMRI-06",
-    "modality": "fMRI",
-    "level": 1,
-    "title": "Nonrigid registration using free-form deformations: application to breast MR images",
-    "first_author": "D. Rueckert",
-    "year": 1999,
-    "doi": "10.1109/42.796284",
-    "url": "https://doi.org/10.1109/42.796284",
-    "venue": "IEEE Transactions on Medical Imaging",
-    "s2_id": "186050bcbecc5a8f2caa76ae9d283bd7bb2c283d",
-    "citation_count": 5716
-  },
-  {
-    "id": "FMRI-07",
-    "modality": "fMRI",
-    "level": 1,
-    "title": "New advances in the Clinica software platform for clinical neuroimaging studies",
-    "first_author": "A. Routier",
-    "year": 2019,
-    "doi": "10.1016/j.neuroimage.2011.09.015",
-    "url": "https://doi.org/10.1016/j.neuroimage.2011.09.015",
-    "venue": "",
-    "s2_id": "3fd75c857fca6d13ee45986f06857b4fdd9ff65e",
-    "citation_count": 5634
-  },
-  {
-    "id": "FMRI-08",
+    "id": "FMRI-04",
     "modality": "fMRI",
     "level": 1,
     "title": "Correspondence of the brain's functional architecture during activation and rest",
@@ -845,20 +715,7 @@
     "citation_count": 5298
   },
   {
-    "id": "FMRI-09",
-    "modality": "fMRI",
-    "level": 1,
-    "title": "The Minimal Preprocessing Pipelines for the Human Connectome Project",
-    "first_author": "M. Glasser",
-    "year": 2013,
-    "doi": "10.1016/j.neuroimage.2013.04.127",
-    "url": "https://doi.org/10.1016/j.neuroimage.2013.04.127",
-    "venue": "NeuroImage",
-    "s2_id": "b18ddb0b6b7518526bce6450cea66af5fde4d37e",
-    "citation_count": 5264
-  },
-  {
-    "id": "FMRI-10",
+    "id": "FMRI-05",
     "modality": "fMRI",
     "level": 1,
     "title": "Conn: A Functional Connectivity Toolbox for Correlated and Anticorrelated Brain Networks",
@@ -871,20 +728,7 @@
     "citation_count": 4677
   },
   {
-    "id": "FMRI-11",
-    "modality": "fMRI",
-    "level": 1,
-    "title": "A Reproducible Evaluation of ANTs Similarity Metric Performance in Brain Image Registration",
-    "first_author": "B. Avants",
-    "year": 2010,
-    "doi": "10.1016/j.neuroimage.2010.09.025",
-    "url": "https://doi.org/10.1016/j.neuroimage.2010.09.025",
-    "venue": "NeuroImage",
-    "s2_id": "2dd32ff6608812d9b5d3877340df1cf9fceda08f",
-    "citation_count": 4597
-  },
-  {
-    "id": "FMRI-12",
+    "id": "FMRI-06",
     "modality": "fMRI",
     "level": 1,
     "title": "A component based noise correction method (CompCor) for BOLD and perfusion based fMRI",
@@ -897,7 +741,7 @@
     "citation_count": 4304
   },
   {
-    "id": "FMRI-13",
+    "id": "FMRI-07",
     "modality": "fMRI",
     "level": 1,
     "title": "DPARSF: A MATLAB Toolbox for “Pipeline” Data Analysis of Resting-State fMRI",
@@ -910,7 +754,7 @@
     "citation_count": 3614
   },
   {
-    "id": "FMRI-14",
+    "id": "FMRI-08",
     "modality": "fMRI",
     "level": 1,
     "title": "Methods to detect, characterize, and remove motion artifact in resting state fMRI",
@@ -923,7 +767,7 @@
     "citation_count": 3590
   },
   {
-    "id": "FMRI-15",
+    "id": "FMRI-09",
     "modality": "fMRI",
     "level": 1,
     "title": "FMRIPrep: a robust preprocessing pipeline for functional MRI",
@@ -936,7 +780,7 @@
     "citation_count": 3506
   },
   {
-    "id": "FMRI-16",
+    "id": "FMRI-10",
     "modality": "fMRI",
     "level": 1,
     "title": "Probabilistic independent component analysis for functional magnetic resonance imaging",
@@ -949,7 +793,7 @@
     "citation_count": 2807
   },
   {
-    "id": "FMRI-17",
+    "id": "FMRI-11",
     "modality": "fMRI",
     "level": 1,
     "title": "Image‐based method for retrospective correction of physiological motion effects in fMRI: RETROICOR",
@@ -962,7 +806,7 @@
     "citation_count": 2078
   },
   {
-    "id": "FMRI-18",
+    "id": "FMRI-12",
     "modality": "fMRI",
     "level": 1,
     "title": "Automatic Denoising of Functional MRI Data: Combining Independent Component Analysis and Hierarchical Fusion of Classifiers",
@@ -975,20 +819,7 @@
     "citation_count": 1809
   },
   {
-    "id": "FMRI-19",
-    "modality": "fMRI",
-    "level": 1,
-    "title": "Image processing and Quality Control for the first 10,000 brain imaging datasets from UK Biobank",
-    "first_author": "F. Alfaro-Almagro",
-    "year": 2017,
-    "doi": "10.1016/j.neuroimage.2017.10.034",
-    "url": "https://doi.org/10.1016/j.neuroimage.2017.10.034",
-    "venue": "bioRxiv",
-    "s2_id": "ecf167b878fd90807bd6958e99373f898dc0e28f",
-    "citation_count": 1452
-  },
-  {
-    "id": "FMRI-20",
+    "id": "FMRI-13",
     "modality": "fMRI",
     "level": 1,
     "title": "Impact of In-Scanner Head Motion on Multiple Measures of Functional Connectivity: Relevance for Studies of Neurodevelopment in Youth",
@@ -1001,20 +832,7 @@
     "citation_count": 1134
   },
   {
-    "id": "FMRI-21",
-    "modality": "fMRI",
-    "level": 1,
-    "title": "Increasing Transparency Through a Multiverse Analysis",
-    "first_author": "S. Steegen",
-    "year": 2016,
-    "doi": "10.1177/1745691616658637",
-    "url": "https://doi.org/10.1177/1745691616658637",
-    "venue": "Perspectives on Psychological Science",
-    "s2_id": "926763d7946bdf19b0422f35df0b1e4145b324d0",
-    "citation_count": 1072
-  },
-  {
-    "id": "FMRI-22",
+    "id": "FMRI-14",
     "modality": "fMRI",
     "level": 1,
     "title": "Groupwise whole-brain parcellation from resting-state fMRI data for network node identification",
@@ -1027,7 +845,7 @@
     "citation_count": 1009
   },
   {
-    "id": "FMRI-23",
+    "id": "FMRI-15",
     "modality": "fMRI",
     "level": 1,
     "title": "Variability in the analysis of a single neuroimaging dataset by many teams",
@@ -1043,19 +861,6 @@
     "id": "DMRI-R1",
     "modality": "dMRI",
     "level": 0,
-    "title": "Image processing and analysis methods for the Adolescent Brain Cognitive Development Study",
-    "first_author": "D. Hagler",
-    "year": 2018,
-    "doi": "10.1101/457739",
-    "url": "https://doi.org/10.1101/457739",
-    "venue": "bioRxiv",
-    "s2_id": "5f5e274d4040c0881ee5cb3d9eb6813edd850683",
-    "citation_count": 1015
-  },
-  {
-    "id": "DMRI-R2",
-    "modality": "dMRI",
-    "level": 0,
     "title": "What’s new and what’s next in diffusion MRI preprocessing",
     "first_author": "C. Tax",
     "year": 2021,
@@ -1066,7 +871,7 @@
     "citation_count": 99
   },
   {
-    "id": "DMRI-R3",
+    "id": "DMRI-R2",
     "modality": "dMRI",
     "level": 0,
     "title": "Did you know? State-of-the-art preprocessing diffusion MRI data can improve tractography",
@@ -1082,110 +887,6 @@
     "id": "DMRI-01",
     "modality": "dMRI",
     "level": 1,
-    "title": "A Threshold Selection Method from Gray-Level Histograms",
-    "first_author": "N. Otsu",
-    "year": 1979,
-    "doi": "10.1109/tsmc.1979.4310076",
-    "url": "https://doi.org/10.1109/tsmc.1979.4310076",
-    "venue": "IEEE Transactions on Systems, Man and Cybernetics",
-    "s2_id": "91343f9ce2e7d702c2ff837830bd35259ff8fd99",
-    "citation_count": 43237
-  },
-  {
-    "id": "DMRI-02",
-    "modality": "dMRI",
-    "level": 1,
-    "title": "Nonlinear total variation based noise removal algorithms",
-    "first_author": "L. Rudin",
-    "year": 1992,
-    "doi": "10.1016/0167-2789(92)90242-f",
-    "url": "https://doi.org/10.1016/0167-2789(92)90242-f",
-    "venue": "",
-    "s2_id": "54205667c1f65a320f667d73c354ed8e86f1b9d9",
-    "citation_count": 16782
-  },
-  {
-    "id": "DMRI-03",
-    "modality": "dMRI",
-    "level": 1,
-    "title": "An automated labeling system for subdividing the human cerebral cortex on MRI scans into gyral based regions of interest",
-    "first_author": "R. Desikan",
-    "year": 2006,
-    "doi": "10.1016/j.neuroimage.2006.01.021",
-    "url": "https://doi.org/10.1016/j.neuroimage.2006.01.021",
-    "venue": "NeuroImage",
-    "s2_id": "ad4e281293237bdb8efbbd639ac823536815f42b",
-    "citation_count": 12976
-  },
-  {
-    "id": "DMRI-04",
-    "modality": "dMRI",
-    "level": 1,
-    "title": "Improved Optimization for the Robust and Accurate Linear Registration and Motion Correction of Brain Images",
-    "first_author": "M. Jenkinson",
-    "year": 2002,
-    "doi": "10.1016/s1053-8119(02)91132-8",
-    "url": "https://doi.org/10.1016/s1053-8119(02)91132-8",
-    "venue": "NeuroImage",
-    "s2_id": "291c9d66cf886ed27d89dc03d42a4612b66ab007",
-    "citation_count": 12244
-  },
-  {
-    "id": "DMRI-05",
-    "modality": "dMRI",
-    "level": 1,
-    "title": "Fast robust automated brain extraction",
-    "first_author": "Stephen M. Smith",
-    "year": 2002,
-    "doi": "10.1002/hbm.10062",
-    "url": "https://doi.org/10.1002/hbm.10062",
-    "venue": "Human Brain Mapping",
-    "s2_id": "84f2a000ec32f9394ca6cd823c5cf724be9b5a9b",
-    "citation_count": 11043
-  },
-  {
-    "id": "DMRI-06",
-    "modality": "dMRI",
-    "level": 1,
-    "title": "Cortical surface-based analysis. I. Segmentation and surface reconstruction.",
-    "first_author": "A. Dale",
-    "year": 1999,
-    "doi": "10.1006/nimg.1998.0395",
-    "url": "https://doi.org/10.1006/nimg.1998.0395",
-    "venue": "NeuroImage",
-    "s2_id": "055411f28a5e28c46c3f0079d397783afc721021",
-    "citation_count": 10910
-  },
-  {
-    "id": "DMRI-07",
-    "modality": "dMRI",
-    "level": 1,
-    "title": "Voxel-based morphometry--the methods.",
-    "first_author": "J. Ashburner",
-    "year": 2000,
-    "doi": "10.1006/nimg.2000.0582",
-    "url": "https://doi.org/10.1006/nimg.2000.0582",
-    "venue": "NeuroImage",
-    "s2_id": "236cb915a1724c4b9ec3e53cfed64ce169358cda",
-    "citation_count": 8798
-  },
-  {
-    "id": "DMRI-08",
-    "modality": "dMRI",
-    "level": 1,
-    "title": "Neurotechnique Whole Brain Segmentation: Automated Labeling of Neuroanatomical Structures in the Human Brain",
-    "first_author": "B. Fischl",
-    "year": 2002,
-    "doi": null,
-    "url": "https://www.semanticscholar.org/paper/2861c24bc829f963a594a5916a9ce9616b6486d7",
-    "venue": "",
-    "s2_id": "2861c24bc829f963a594a5916a9ce9616b6486d7",
-    "citation_count": 8727
-  },
-  {
-    "id": "DMRI-09",
-    "modality": "dMRI",
-    "level": 1,
     "title": "Spin diffusion measurements : spin echoes in the presence of a time-dependent field gradient",
     "first_author": "E. Stejskal",
     "year": 1965,
@@ -1196,33 +897,7 @@
     "citation_count": 7880
   },
   {
-    "id": "DMRI-10",
-    "modality": "dMRI",
-    "level": 1,
-    "title": "FreeSurfer",
-    "first_author": "B. Fischl",
-    "year": 2012,
-    "doi": "10.1016/j.neuroimage.2012.01.021",
-    "url": "https://doi.org/10.1016/j.neuroimage.2012.01.021",
-    "venue": "NeuroImage",
-    "s2_id": "771b3c73fbaba12f5d65db39401ee9cddb224554",
-    "citation_count": 7859
-  },
-  {
-    "id": "DMRI-11",
-    "modality": "dMRI",
-    "level": 1,
-    "title": "Cortical surface-based analysis. II: Inflation, flattening, and a surface-based coordinate system.",
-    "first_author": "B. Fischl",
-    "year": 1999,
-    "doi": "10.1006/nimg.1998.0396",
-    "url": "https://doi.org/10.1006/nimg.1998.0396",
-    "venue": "NeuroImage",
-    "s2_id": "c8644971594953ba8ab6d0092fa906e0d96fb122",
-    "citation_count": 6320
-  },
-  {
-    "id": "DMRI-12",
+    "id": "DMRI-02",
     "modality": "dMRI",
     "level": 1,
     "title": "MR diffusion tensor spectroscopy and imaging.",
@@ -1235,7 +910,7 @@
     "citation_count": 6098
   },
   {
-    "id": "DMRI-13",
+    "id": "DMRI-03",
     "modality": "dMRI",
     "level": 1,
     "title": "Tract-based spatial statistics: Voxelwise analysis of multi-subject diffusion data",
@@ -1248,20 +923,7 @@
     "citation_count": 5874
   },
   {
-    "id": "DMRI-14",
-    "modality": "dMRI",
-    "level": 1,
-    "title": "SUSAN—A New Approach to Low Level Image Processing",
-    "first_author": "Stephen M. Smith",
-    "year": 1997,
-    "doi": "10.1023/a:1007963824710",
-    "url": "https://doi.org/10.1023/a:1007963824710",
-    "venue": "International Journal of Computer Vision",
-    "s2_id": "3a891df6349236ace22780bec4951a88af785fdf",
-    "citation_count": 3762
-  },
-  {
-    "id": "DMRI-15",
+    "id": "DMRI-04",
     "modality": "dMRI",
     "level": 1,
     "title": "An integrated approach to correction for off-resonance effects and subject movement in diffusion MR imaging",
@@ -1274,7 +936,7 @@
     "citation_count": 3404
   },
   {
-    "id": "DMRI-16",
+    "id": "DMRI-05",
     "modality": "dMRI",
     "level": 1,
     "title": "MRtrix3: A fast, flexible and open software framework for medical image processing and visualisation",
@@ -1287,20 +949,7 @@
     "citation_count": 2770
   },
   {
-    "id": "DMRI-17",
-    "modality": "dMRI",
-    "level": 1,
-    "title": "The rician distribution of noisy mri data",
-    "first_author": "H. Gudbjartsson",
-    "year": 1995,
-    "doi": "10.1002/mrm.1910340618",
-    "url": "https://doi.org/10.1002/mrm.1910340618",
-    "venue": "Magnetic Resonance in Medicine",
-    "s2_id": "91bf9dca5d10430f0cf3b138153d316540e9c89c",
-    "citation_count": 2747
-  },
-  {
-    "id": "DMRI-18",
+    "id": "DMRI-06",
     "modality": "dMRI",
     "level": 1,
     "title": "Denoising of diffusion MRI using random matrix theory",
@@ -1313,7 +962,7 @@
     "citation_count": 1758
   },
   {
-    "id": "DMRI-19",
+    "id": "DMRI-07",
     "modality": "dMRI",
     "level": 1,
     "title": "Gibbs‐ringing artifact removal based on local subvoxel‐shifts",
@@ -1326,7 +975,7 @@
     "citation_count": 1395
   },
   {
-    "id": "DMRI-20",
+    "id": "DMRI-08",
     "modality": "dMRI",
     "level": 1,
     "title": "Dipy, a library for the analysis of diffusion MRI data",
@@ -1339,7 +988,7 @@
     "citation_count": 1383
   },
   {
-    "id": "DMRI-21",
+    "id": "DMRI-09",
     "modality": "dMRI",
     "level": 1,
     "title": "The B‐matrix must be rotated when correcting for subject motion in DTI data",
@@ -1352,7 +1001,7 @@
     "citation_count": 1375
   },
   {
-    "id": "DMRI-22",
+    "id": "DMRI-10",
     "modality": "dMRI",
     "level": 1,
     "title": "The challenge of mapping the human connectome based on diffusion tractography",
@@ -1407,6 +1056,97 @@
     "id": "ANAT-01",
     "modality": "anatMRI",
     "level": 1,
+    "title": "An automated labeling system for subdividing the human cerebral cortex on MRI scans into gyral based regions of interest",
+    "first_author": "R. Desikan",
+    "year": 2006,
+    "doi": "10.1016/j.neuroimage.2006.01.021",
+    "url": "https://doi.org/10.1016/j.neuroimage.2006.01.021",
+    "venue": "NeuroImage",
+    "s2_id": "ad4e281293237bdb8efbbd639ac823536815f42b",
+    "citation_count": 12976
+  },
+  {
+    "id": "ANAT-02",
+    "modality": "anatMRI",
+    "level": 1,
+    "title": "Cortical surface-based analysis. I. Segmentation and surface reconstruction.",
+    "first_author": "A. Dale",
+    "year": 1999,
+    "doi": "10.1006/nimg.1998.0395",
+    "url": "https://doi.org/10.1006/nimg.1998.0395",
+    "venue": "NeuroImage",
+    "s2_id": "055411f28a5e28c46c3f0079d397783afc721021",
+    "citation_count": 10910
+  },
+  {
+    "id": "ANAT-03",
+    "modality": "anatMRI",
+    "level": 1,
+    "title": "Voxel-based morphometry--the methods.",
+    "first_author": "J. Ashburner",
+    "year": 2000,
+    "doi": "10.1006/nimg.2000.0582",
+    "url": "https://doi.org/10.1006/nimg.2000.0582",
+    "venue": "NeuroImage",
+    "s2_id": "236cb915a1724c4b9ec3e53cfed64ce169358cda",
+    "citation_count": 8798
+  },
+  {
+    "id": "ANAT-04",
+    "modality": "anatMRI",
+    "level": 1,
+    "title": "Neurotechnique Whole Brain Segmentation: Automated Labeling of Neuroanatomical Structures in the Human Brain",
+    "first_author": "B. Fischl",
+    "year": 2002,
+    "doi": null,
+    "url": "https://www.semanticscholar.org/paper/2861c24bc829f963a594a5916a9ce9616b6486d7",
+    "venue": "",
+    "s2_id": "2861c24bc829f963a594a5916a9ce9616b6486d7",
+    "citation_count": 8727
+  },
+  {
+    "id": "ANAT-05",
+    "modality": "anatMRI",
+    "level": 1,
+    "title": "FreeSurfer",
+    "first_author": "B. Fischl",
+    "year": 2012,
+    "doi": "10.1016/j.neuroimage.2012.01.021",
+    "url": "https://doi.org/10.1016/j.neuroimage.2012.01.021",
+    "venue": "NeuroImage",
+    "s2_id": "771b3c73fbaba12f5d65db39401ee9cddb224554",
+    "citation_count": 7859
+  },
+  {
+    "id": "ANAT-06",
+    "modality": "anatMRI",
+    "level": 1,
+    "title": "Segmentation of brain MR images through a hidden Markov random field model and the expectation-maximization algorithm",
+    "first_author": "Yongyue Zhang",
+    "year": 2001,
+    "doi": "10.1109/42.906424",
+    "url": "https://doi.org/10.1109/42.906424",
+    "venue": "IEEE Transactions on Medical Imaging",
+    "s2_id": "7d5aedecdfc4e8f83638bac47eb7cf2f860ec51c",
+    "citation_count": 7352
+  },
+  {
+    "id": "ANAT-07",
+    "modality": "anatMRI",
+    "level": 1,
+    "title": "Cortical surface-based analysis. II: Inflation, flattening, and a surface-based coordinate system.",
+    "first_author": "B. Fischl",
+    "year": 1999,
+    "doi": "10.1006/nimg.1998.0396",
+    "url": "https://doi.org/10.1006/nimg.1998.0396",
+    "venue": "NeuroImage",
+    "s2_id": "c8644971594953ba8ab6d0092fa906e0d96fb122",
+    "citation_count": 6320
+  },
+  {
+    "id": "ANAT-08",
+    "modality": "anatMRI",
+    "level": 1,
     "title": "The Multimodal Brain Tumor Image Segmentation Benchmark (BRATS)",
     "first_author": "Bjoern H Menze",
     "year": 2014,
@@ -1417,7 +1157,33 @@
     "citation_count": 6241
   },
   {
-    "id": "ANAT-02",
+    "id": "ANAT-09",
+    "modality": "anatMRI",
+    "level": 1,
+    "title": "Measuring the thickness of the human cerebral cortex from magnetic resonance images.",
+    "first_author": "B. Fischl",
+    "year": 2000,
+    "doi": "10.1073/pnas.200033797",
+    "url": "https://doi.org/10.1073/pnas.200033797",
+    "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+    "s2_id": "d8c44b1cd38a27c78af9c9444d8be019e2f26417",
+    "citation_count": 5958
+  },
+  {
+    "id": "ANAT-10",
+    "modality": "anatMRI",
+    "level": 1,
+    "title": "N4ITK: Improved N3 Bias Correction",
+    "first_author": "N. Tustison",
+    "year": 2010,
+    "doi": "10.1109/tmi.2010.2046908",
+    "url": "https://doi.org/10.1109/tmi.2010.2046908",
+    "venue": "IEEE Transactions on Medical Imaging",
+    "s2_id": "3bda8b8dd09117f7d5abc12cf4581ac50b6412ee",
+    "citation_count": 5673
+  },
+  {
+    "id": "ANAT-11",
     "modality": "anatMRI",
     "level": 1,
     "title": "Brain tumor segmentation with Deep Neural Networks",
@@ -1430,7 +1196,7 @@
     "citation_count": 3105
   },
   {
-    "id": "ANAT-03",
+    "id": "ANAT-12",
     "modality": "anatMRI",
     "level": 1,
     "title": "Advancing The Cancer Genome Atlas glioma MRI collections with expert segmentation labels and radiomic features",
@@ -1443,7 +1209,7 @@
     "citation_count": 2870
   },
   {
-    "id": "ANAT-04",
+    "id": "ANAT-13",
     "modality": "anatMRI",
     "level": 1,
     "title": "Brain Tumor Segmentation Using Convolutional Neural Networks in MRI Images",
@@ -1456,20 +1222,20 @@
     "citation_count": 2356
   },
   {
-    "id": "ANAT-05",
+    "id": "ANAT-14",
     "modality": "anatMRI",
     "level": 1,
-    "title": "Artificial intelligence in cancer imaging: Clinical challenges and applications",
-    "first_author": "W. Bi",
-    "year": 2019,
-    "doi": "10.3322/caac.21552",
-    "url": "https://doi.org/10.3322/caac.21552",
-    "venue": "Ca",
-    "s2_id": "4955335096c038f2cf39fdb4cc2bc79edaf363f9",
-    "citation_count": 1596
+    "title": "Adaptive Segmentation of MRI Data",
+    "first_author": "W. Wells",
+    "year": 1995,
+    "doi": "10.1007/978-3-540-49197-2_7",
+    "url": "https://doi.org/10.1007/978-3-540-49197-2_7",
+    "venue": "Computer Vision, Virtual Reality and Robotics in Medicine",
+    "s2_id": "732e1de5ba6e294f129030e3d9c922c56f4a4b0f",
+    "citation_count": 1526
   },
   {
-    "id": "ANAT-06",
+    "id": "ANAT-15",
     "modality": "anatMRI",
     "level": 1,
     "title": "Brain tumor classification using deep CNN features via transfer learning",
@@ -1482,7 +1248,7 @@
     "citation_count": 1095
   },
   {
-    "id": "ANAT-07",
+    "id": "ANAT-16",
     "modality": "anatMRI",
     "level": 1,
     "title": "A survey of MRI-based medical image analysis for brain tumor studies",
@@ -1495,7 +1261,7 @@
     "citation_count": 988
   },
   {
-    "id": "ANAT-08",
+    "id": "ANAT-17",
     "modality": "anatMRI",
     "level": 1,
     "title": "State of the art survey on MRI brain tumor segmentation.",
@@ -1508,7 +1274,20 @@
     "citation_count": 707
   },
   {
-    "id": "ANAT-09",
+    "id": "ANAT-18",
+    "modality": "anatMRI",
+    "level": 1,
+    "title": "Automated model-based bias field correction of MR images of the brain",
+    "first_author": "K. V. Leemput",
+    "year": 1999,
+    "doi": "10.1109/42.811268",
+    "url": "https://doi.org/10.1109/42.811268",
+    "venue": "IEEE Transactions on Medical Imaging",
+    "s2_id": "4b0a6593109de4bc31b1554ce12ed45fd76b81ee",
+    "citation_count": 693
+  },
+  {
+    "id": "ANAT-19",
     "modality": "anatMRI",
     "level": 1,
     "title": "Wavelet-based Rician noise removal for magnetic resonance imaging",
@@ -1521,7 +1300,7 @@
     "citation_count": 678
   },
   {
-    "id": "ANAT-10",
+    "id": "ANAT-20",
     "modality": "anatMRI",
     "level": 1,
     "title": "MRI-based brain tumor detection using convolutional deep learning methods and chosen machine learning techniques",
@@ -1534,7 +1313,7 @@
     "citation_count": 538
   },
   {
-    "id": "ANAT-11",
+    "id": "ANAT-21",
     "modality": "anatMRI",
     "level": 1,
     "title": "Brain tumor segmentation based on deep learning and an attention mechanism using MRI multi-modalities brain images",
@@ -1547,7 +1326,7 @@
     "citation_count": 534
   },
   {
-    "id": "ANAT-12",
+    "id": "ANAT-22",
     "modality": "anatMRI",
     "level": 1,
     "title": "MRI-Based Brain Tumor Classification Using Ensemble of Deep Features and Machine Learning Classifiers",
@@ -1560,7 +1339,7 @@
     "citation_count": 498
   },
   {
-    "id": "ANAT-13",
+    "id": "ANAT-23",
     "modality": "anatMRI",
     "level": 1,
     "title": "Brain Tumor Detection Based on Deep Learning Approaches and Magnetic Resonance Imaging",
@@ -1573,7 +1352,7 @@
     "citation_count": 425
   },
   {
-    "id": "ANAT-14",
+    "id": "ANAT-24",
     "modality": "anatMRI",
     "level": 1,
     "title": "A survey of MRI-based brain tumor segmentation methods",
@@ -1586,7 +1365,7 @@
     "citation_count": 405
   },
   {
-    "id": "ANAT-15",
+    "id": "ANAT-25",
     "modality": "anatMRI",
     "level": 1,
     "title": "Fully Automatic Segmentation of Brain Tumor Images Using Support Vector Machine Classification in Combination with Hierarchical Conditional Random Field Regularization",
@@ -1599,7 +1378,20 @@
     "citation_count": 389
   },
   {
-    "id": "ANAT-16",
+    "id": "ANAT-26",
+    "modality": "anatMRI",
+    "level": 1,
+    "title": "Estimating the bias field of MR images",
+    "first_author": "R. Guillemaud",
+    "year": 1997,
+    "doi": "10.1109/42.585758",
+    "url": "https://doi.org/10.1109/42.585758",
+    "venue": "IEEE Transactions on Medical Imaging",
+    "s2_id": "cdbe696733259370ce061c083d69be190b1aaff1",
+    "citation_count": 376
+  },
+  {
+    "id": "ANAT-27",
     "modality": "anatMRI",
     "level": 1,
     "title": "Tumor-Cut: Segmentation of Brain Tumors on Contrast Enhanced MR Images for Radiosurgery Applications",
@@ -1612,7 +1404,7 @@
     "citation_count": 308
   },
   {
-    "id": "ANAT-17",
+    "id": "ANAT-28",
     "modality": "anatMRI",
     "level": 1,
     "title": "Decision Forests for Tissue-Specific Segmentation of High-Grade Gliomas in Multi-channel MR",
@@ -1625,7 +1417,7 @@
     "citation_count": 303
   },
   {
-    "id": "ANAT-18",
+    "id": "ANAT-29",
     "modality": "anatMRI",
     "level": 1,
     "title": "Multifractal Texture Estimation for Detection and Segmentation of Brain Tumors",
@@ -1638,7 +1430,7 @@
     "citation_count": 297
   },
   {
-    "id": "ANAT-19",
+    "id": "ANAT-30",
     "modality": "anatMRI",
     "level": 1,
     "title": "A Deep Analysis of Brain Tumor Detection from MR Images Using Deep Learning Networks",
@@ -1651,7 +1443,7 @@
     "citation_count": 286
   },
   {
-    "id": "ANAT-20",
+    "id": "ANAT-31",
     "modality": "anatMRI",
     "level": 1,
     "title": "Optimal Symmetric Multimodal Templates and Concatenated Random Forests for Supervised Brain Tumor Segmentation (Simplified) with ANTsR",
@@ -1664,7 +1456,7 @@
     "citation_count": 280
   },
   {
-    "id": "ANAT-21",
+    "id": "ANAT-32",
     "modality": "anatMRI",
     "level": 1,
     "title": "A deep learning approach for brain tumor classification using MRI images",
@@ -1677,7 +1469,7 @@
     "citation_count": 274
   },
   {
-    "id": "ANAT-22",
+    "id": "ANAT-33",
     "modality": "anatMRI",
     "level": 1,
     "title": "Brain Tumor Segmentation and Survival Prediction Using Multimodal MRI Scans With Deep Learning",
@@ -1690,7 +1482,7 @@
     "citation_count": 233
   },
   {
-    "id": "ANAT-23",
+    "id": "ANAT-34",
     "modality": "anatMRI",
     "level": 1,
     "title": "Brain Tumor Detection and Segmentation in MR Images Using Deep Learning",
@@ -1703,7 +1495,7 @@
     "citation_count": 224
   },
   {
-    "id": "ANAT-24",
+    "id": "ANAT-35",
     "modality": "anatMRI",
     "level": 1,
     "title": "Automated Brain Tumor Segmentation Using Multimodal Brain Scans: A Survey Based on Models Submitted to the BraTS 2012–2018 Challenges",
@@ -1716,7 +1508,7 @@
     "citation_count": 175
   },
   {
-    "id": "ANAT-25",
+    "id": "ANAT-36",
     "modality": "anatMRI",
     "level": 1,
     "title": "BrainSegFounder: Towards 3D foundation models for neuroimage segmentation",
@@ -1729,20 +1521,7 @@
     "citation_count": 68
   },
   {
-    "id": "ANAT-26",
-    "modality": "anatMRI",
-    "level": 1,
-    "title": "MR Imaging in the 21st Century: Technical Innovation over the First Two Decades",
-    "first_author": "H. Kabasawa",
-    "year": 2021,
-    "doi": "10.2463/mrms.rev.2021-0011",
-    "url": "https://doi.org/10.2463/mrms.rev.2021-0011",
-    "venue": "Magnetic Resonance in Medical Sciences",
-    "s2_id": "c53068b30ba3aa71174658e0105663f867128b09",
-    "citation_count": 59
-  },
-  {
-    "id": "ANAT-27",
+    "id": "ANAT-37",
     "modality": "anatMRI",
     "level": 1,
     "title": "MRI-based brain tumor segmentation using FPGA-accelerated neural network",
@@ -1755,7 +1534,7 @@
     "citation_count": 52
   },
   {
-    "id": "ANAT-28",
+    "id": "ANAT-38",
     "modality": "anatMRI",
     "level": 1,
     "title": "The Federated Tumor Segmentation (FeTS) Tool: An open-source solution to further solid tumor research",
@@ -1768,7 +1547,7 @@
     "citation_count": 49
   },
   {
-    "id": "ANAT-29",
+    "id": "ANAT-39",
     "modality": "anatMRI",
     "level": 1,
     "title": "Developments in Brain Tumor Segmentation Using MRI: Deep Learning Insights and Future Perspectives",
@@ -1779,19 +1558,6 @@
     "venue": "IEEE Access",
     "s2_id": "c5539e51c9f362f94895bef46e89b204e51ef913",
     "citation_count": 32
-  },
-  {
-    "id": "ANAT-30",
-    "modality": "anatMRI",
-    "level": 1,
-    "title": "Physical and technical aspects of human magnetic resonance imaging: present status and 50 years historical review",
-    "first_author": "K. Kose",
-    "year": 2021,
-    "doi": "10.1080/23746149.2021.1885310",
-    "url": "https://doi.org/10.1080/23746149.2021.1885310",
-    "venue": "Advances in Physics: X",
-    "s2_id": "50141fed0425f7d60ae2386c74ebbb834971eaf1",
-    "citation_count": 14
   },
   {
     "id": "PET-R1",
@@ -1833,20 +1599,20 @@
     "citation_count": 43
   },
   {
-    "id": "PET-01",
+    "id": "PET-R4",
     "modality": "PET",
-    "level": 1,
-    "title": "Spatial registration and normalization of images",
-    "first_author": "Karl J. Friston",
-    "year": 1995,
-    "doi": "10.1002/hbm.460030303",
-    "url": "https://doi.org/10.1002/hbm.460030303",
-    "venue": "",
-    "s2_id": "8f0556791ef80a5146f489c799e85fb2ac46d1bd",
-    "citation_count": 3933
+    "level": 0,
+    "title": "Probabilistic Air Segmentation and Sparse Regression Estimated Pseudo CT for PET/MR Attenuation Correction",
+    "first_author": "Yasheng Chen",
+    "year": 2014,
+    "doi": "10.1148/radiol.14140810",
+    "url": "https://doi.org/10.1148/radiol.14140810",
+    "venue": "Radiology",
+    "s2_id": "cab2e07dbb7aa44e1b7d37251e71839d65f95bb7",
+    "citation_count": 38
   },
   {
-    "id": "PET-02",
+    "id": "PET-01",
     "modality": "PET",
     "level": 1,
     "title": "Simplified reference tissue model for PET receptor studies.",
@@ -1859,20 +1625,7 @@
     "citation_count": 2098
   },
   {
-    "id": "PET-03",
-    "modality": "PET",
-    "level": 1,
-    "title": "Consensus Nomenclature for in vivo Imaging of Reversibly Binding Radioligands",
-    "first_author": "R. Innis",
-    "year": 2007,
-    "doi": "10.1038/sj.jcbfm.9600493",
-    "url": "https://doi.org/10.1038/sj.jcbfm.9600493",
-    "venue": "Journal of Cerebral Blood Flow and Metabolism",
-    "s2_id": "68b965e75a4410994e151c329ef3dafa0037af79",
-    "citation_count": 2024
-  },
-  {
-    "id": "PET-04",
+    "id": "PET-02",
     "modality": "PET",
     "level": 1,
     "title": "Attenuation correction for a combined 3D PET/CT scanner.",
@@ -1885,46 +1638,20 @@
     "citation_count": 976
   },
   {
-    "id": "PET-05",
+    "id": "PET-03",
     "modality": "PET",
     "level": 1,
-    "title": "SUV: standard uptake or silly useless value?",
-    "first_author": "J. Keyes",
-    "year": 1995,
-    "doi": null,
-    "url": "https://www.semanticscholar.org/paper/11dc0070376b7cb80c0f4de039cdaaefa0b29902",
+    "title": "Tissue Classification as a Potential Approach for Attenuation Correction in Whole-Body PET/MRI: Evaluation with PET/CT Data",
+    "first_author": "A. Martinez-Möller",
+    "year": 2009,
+    "doi": "10.2967/jnumed.108.054726",
+    "url": "https://doi.org/10.2967/jnumed.108.054726",
     "venue": "Journal of Nuclear Medicine",
-    "s2_id": "11dc0070376b7cb80c0f4de039cdaaefa0b29902",
-    "citation_count": 907
+    "s2_id": "b25361edfe3f388d4ddef95d6f41cd49aa372d2c",
+    "citation_count": 751
   },
   {
-    "id": "PET-06",
-    "modality": "PET",
-    "level": 1,
-    "title": "A practical method for position-dependent Compton-scatter correction in single photon emission CT.",
-    "first_author": "Koichi Ogawa",
-    "year": 1991,
-    "doi": "10.1109/42.97591",
-    "url": "https://doi.org/10.1109/42.97591",
-    "venue": "IEEE Transactions on Medical Imaging",
-    "s2_id": "1f5e7b97cedc33ba201e8e80df8f98b239d407ed",
-    "citation_count": 643
-  },
-  {
-    "id": "PET-07",
-    "modality": "PET",
-    "level": 1,
-    "title": "Improved SPECT quantification using compensation for scattered photons.",
-    "first_author": "R. Jaszczak",
-    "year": 1984,
-    "doi": null,
-    "url": "https://www.semanticscholar.org/paper/a8c10bf7ce5b4498f66ea0adaa46b8c7cc6e1600",
-    "venue": "Journal of Nuclear Medicine",
-    "s2_id": "a8c10bf7ce5b4498f66ea0adaa46b8c7cc6e1600",
-    "citation_count": 635
-  },
-  {
-    "id": "PET-08",
+    "id": "PET-04",
     "modality": "PET",
     "level": 1,
     "title": "New, faster, image-based scatter correction for 3D PET",
@@ -1937,7 +1664,7 @@
     "citation_count": 544
   },
   {
-    "id": "PET-09",
+    "id": "PET-05",
     "modality": "PET",
     "level": 1,
     "title": "X-ray-based attenuation correction for positron emission tomography/computed tomography scanners.",
@@ -1950,7 +1677,7 @@
     "citation_count": 531
   },
   {
-    "id": "PET-10",
+    "id": "PET-06",
     "modality": "PET",
     "level": 1,
     "title": "MRI-Based Attenuation Correction for PET/MRI: A Novel Approach Combining Pattern Recognition and Atlas Registration",
@@ -1963,7 +1690,20 @@
     "citation_count": 520
   },
   {
-    "id": "PET-11",
+    "id": "PET-07",
+    "modality": "PET",
+    "level": 1,
+    "title": "MRI-Based Attenuation Correction for PET/MRI Using Ultrashort Echo Time Sequences",
+    "first_author": "V. Keereman",
+    "year": 2010,
+    "doi": "10.2967/jnumed.109.065425",
+    "url": "https://doi.org/10.2967/jnumed.109.065425",
+    "venue": "Journal of Nuclear Medicine",
+    "s2_id": "5c25681fe248f54f5714481925618e92e4b4c107",
+    "citation_count": 475
+  },
+  {
+    "id": "PET-08",
     "modality": "PET",
     "level": 1,
     "title": "PET attenuation coefficients from CT images: experimental evaluation of the transformation of CT into PET 511-keV attenuation coefficients",
@@ -1976,7 +1716,7 @@
     "citation_count": 446
   },
   {
-    "id": "PET-12",
+    "id": "PET-09",
     "modality": "PET",
     "level": 1,
     "title": "Model-based scatter correction for fully 3D PET.",
@@ -1989,7 +1729,7 @@
     "citation_count": 407
   },
   {
-    "id": "PET-13",
+    "id": "PET-10",
     "modality": "PET",
     "level": 1,
     "title": "Determination of the attenuation map in emission tomography.",
@@ -2002,7 +1742,20 @@
     "citation_count": 390
   },
   {
-    "id": "PET-14",
+    "id": "PET-11",
+    "modality": "PET",
+    "level": 1,
+    "title": "Toward Implementing an MRI-Based PET Attenuation-Correction Method for Neurologic Studies on the MR-PET Brain Prototype",
+    "first_author": "C. Catana",
+    "year": 2010,
+    "doi": "10.2967/jnumed.109.069112",
+    "url": "https://doi.org/10.2967/jnumed.109.069112",
+    "venue": "Journal of Nuclear Medicine",
+    "s2_id": "4d58afa032133c60e49fec1dd34714a4c6647dca",
+    "citation_count": 372
+  },
+  {
+    "id": "PET-12",
     "modality": "PET",
     "level": 1,
     "title": "Four-dimensional (4D) PET/CT imaging of the thorax.",
@@ -2015,7 +1768,7 @@
     "citation_count": 364
   },
   {
-    "id": "PET-15",
+    "id": "PET-13",
     "modality": "PET",
     "level": 1,
     "title": "Correction of PET Data for Partial Volume Effects in Human Cerebral Cortex by MR Imaging",
@@ -2028,20 +1781,7 @@
     "citation_count": 346
   },
   {
-    "id": "PET-16",
-    "modality": "PET",
-    "level": 1,
-    "title": "Relevance of accurate Monte Carlo modeling in nuclear medical imaging.",
-    "first_author": "H. Zaidi",
-    "year": 1999,
-    "doi": "10.1118/1.598559",
-    "url": "https://doi.org/10.1118/1.598559",
-    "venue": "Medical Physics (Lancaster)",
-    "s2_id": "3b0b6c95c0187454aa2af06fd16ac0de49f6eb13",
-    "citation_count": 291
-  },
-  {
-    "id": "PET-17",
+    "id": "PET-14",
     "modality": "PET",
     "level": 1,
     "title": "Comparative evaluation of MR-based partial-volume correction schemes for PET.",
@@ -2054,7 +1794,7 @@
     "citation_count": 281
   },
   {
-    "id": "PET-18",
+    "id": "PET-15",
     "modality": "PET",
     "level": 1,
     "title": "Noninvasive Quantification of the Cerebral Metabolic Rate for Glucose Using Positron Emission Tomography, 18F-Fluoro-2-Deoxyglucose, the Patlak Method, and an Image-Derived Input Function",
@@ -2067,33 +1807,7 @@
     "citation_count": 266
   },
   {
-    "id": "PET-19",
-    "modality": "PET",
-    "level": 1,
-    "title": "Quantitative SPECT imaging: a review and recommendations by the Focus Committee of the Society of Nuclear Medicine Computer and Instrumentation Council.",
-    "first_author": "M. Rosenthal",
-    "year": 1995,
-    "doi": null,
-    "url": "https://www.semanticscholar.org/paper/ede3969ce6dd2327b2f0b5a59698f39c02404d40",
-    "venue": "Journal of Nuclear Medicine",
-    "s2_id": "ede3969ce6dd2327b2f0b5a59698f39c02404d40",
-    "citation_count": 255
-  },
-  {
-    "id": "PET-20",
-    "modality": "PET",
-    "level": 1,
-    "title": "A new method for modeling the spatially-variant, object-dependent scatter response function in SPECT",
-    "first_author": "E. Frey",
-    "year": 1996,
-    "doi": "10.1109/nssmic.1996.591559",
-    "url": "https://doi.org/10.1109/nssmic.1996.591559",
-    "venue": "IEEE Nuclear Science Symposium Conference Record",
-    "s2_id": "15b870c7e6950996409cb1dcac5638e4ba7e15ef",
-    "citation_count": 246
-  },
-  {
-    "id": "PET-21",
+    "id": "PET-16",
     "modality": "PET",
     "level": 1,
     "title": "A convolution-subtraction scatter correction method for 3D PET.",
@@ -2106,7 +1820,7 @@
     "citation_count": 246
   },
   {
-    "id": "PET-22",
+    "id": "PET-17",
     "modality": "PET",
     "level": 1,
     "title": "Magnetic resonance imaging-guided attenuation and scatter corrections in three-dimensional brain positron emission tomography.",
@@ -2119,7 +1833,7 @@
     "citation_count": 241
   },
   {
-    "id": "PET-23",
+    "id": "PET-18",
     "modality": "PET",
     "level": 1,
     "title": "Image-Derived Input Function for Brain PET Studies: Many Challenges and Few Opportunities",
@@ -2132,20 +1846,7 @@
     "citation_count": 233
   },
   {
-    "id": "PET-24",
-    "modality": "PET",
-    "level": 1,
-    "title": "A dual-photopeak window method for scatter correction.",
-    "first_author": "Matt A. King",
-    "year": 1992,
-    "doi": null,
-    "url": "https://www.semanticscholar.org/paper/281298398eedd04050ad2ed2e9cef01b0a6c9108",
-    "venue": "Journal of Nuclear Medicine",
-    "s2_id": "281298398eedd04050ad2ed2e9cef01b0a6c9108",
-    "citation_count": 232
-  },
-  {
-    "id": "PET-25",
+    "id": "PET-19",
     "modality": "PET",
     "level": 1,
     "title": "Dynamic whole-body PET imaging: principles, potentials and applications",
@@ -2158,7 +1859,7 @@
     "citation_count": 232
   },
   {
-    "id": "PET-26",
+    "id": "PET-20",
     "modality": "PET",
     "level": 1,
     "title": "Experimental and clinical evaluation of iterative reconstruction (OSEM) in dynamic PET: quantitative characteristics and effects on kinetic modeling.",
@@ -2171,7 +1872,7 @@
     "citation_count": 214
   },
   {
-    "id": "PET-27",
+    "id": "PET-21",
     "modality": "PET",
     "level": 1,
     "title": "Noninvasive quantitative fluorodeoxyglucose PET studies with an estimated input function derived from a population-based arterial blood curve.",
@@ -2184,7 +1885,7 @@
     "citation_count": 213
   },
   {
-    "id": "PET-28",
+    "id": "PET-22",
     "modality": "PET",
     "level": 1,
     "title": "Partial Volume Correction Strategies in PET.",
@@ -2197,7 +1898,7 @@
     "citation_count": 200
   },
   {
-    "id": "PET-29",
+    "id": "PET-23",
     "modality": "PET",
     "level": 1,
     "title": "Kinetic modeling and parametric imaging with dynamic PET for oncological applications: general considerations, current clinical applications, and future perspectives",
@@ -2210,7 +1911,7 @@
     "citation_count": 183
   },
   {
-    "id": "PET-30",
+    "id": "PET-24",
     "modality": "PET",
     "level": 1,
     "title": "Total-Body Dynamic Reconstruction and Parametric Imaging on the uEXPLORER",
@@ -2223,20 +1924,33 @@
     "citation_count": 172
   },
   {
-    "id": "SPECT-R1",
+    "id": "SPECT-01",
     "modality": "SPECT",
-    "level": 0,
-    "title": "SPECT Imaging of Epilepsy: An Overview and Comparison with F-18 FDG PET",
-    "first_author": "Sunhee S. Kim",
-    "year": 2011,
-    "doi": "10.1155/2011/813028",
-    "url": "https://doi.org/10.1155/2011/813028",
-    "venue": "International Journal of Molecular Imaging",
-    "s2_id": "dfc5277733141d463504358131288bba419005f6",
-    "citation_count": 87
+    "level": 1,
+    "title": "A practical method for position-dependent Compton-scatter correction in single photon emission CT.",
+    "first_author": "Koichi Ogawa",
+    "year": 1991,
+    "doi": "10.1109/42.97591",
+    "url": "https://doi.org/10.1109/42.97591",
+    "venue": "IEEE Transactions on Medical Imaging",
+    "s2_id": "1f5e7b97cedc33ba201e8e80df8f98b239d407ed",
+    "citation_count": 643
   },
   {
-    "id": "SPECT-01",
+    "id": "SPECT-02",
+    "modality": "SPECT",
+    "level": 1,
+    "title": "Improved SPECT quantification using compensation for scattered photons.",
+    "first_author": "R. Jaszczak",
+    "year": 1984,
+    "doi": null,
+    "url": "https://www.semanticscholar.org/paper/a8c10bf7ce5b4498f66ea0adaa46b8c7cc6e1600",
+    "venue": "Journal of Nuclear Medicine",
+    "s2_id": "a8c10bf7ce5b4498f66ea0adaa46b8c7cc6e1600",
+    "citation_count": 635
+  },
+  {
+    "id": "SPECT-03",
     "modality": "SPECT",
     "level": 1,
     "title": "Subtraction ictal SPECT co‐registered to MRI improves clinical usefulness of SPECT in localizing the surgical seizure focus",
@@ -2249,20 +1963,20 @@
     "citation_count": 507
   },
   {
-    "id": "SPECT-02",
+    "id": "SPECT-04",
     "modality": "SPECT",
     "level": 1,
-    "title": "The Relative Contributions of MRI, SPECT, and PET Imaging in Epilepsy",
-    "first_author": "S. Spencer",
-    "year": 1994,
-    "doi": "10.1111/j.1528-1157.1994.tb05990.x",
-    "url": "https://doi.org/10.1111/j.1528-1157.1994.tb05990.x",
-    "venue": "Epilepsia",
-    "s2_id": "fada9815a46862a12aec5cc7dccd44c04e55eae3",
-    "citation_count": 433
+    "title": "Quantitative SPECT imaging: a review and recommendations by the Focus Committee of the Society of Nuclear Medicine Computer and Instrumentation Council.",
+    "first_author": "M. Rosenthal",
+    "year": 1995,
+    "doi": null,
+    "url": "https://www.semanticscholar.org/paper/ede3969ce6dd2327b2f0b5a59698f39c02404d40",
+    "venue": "Journal of Nuclear Medicine",
+    "s2_id": "ede3969ce6dd2327b2f0b5a59698f39c02404d40",
+    "citation_count": 255
   },
   {
-    "id": "SPECT-03",
+    "id": "SPECT-05",
     "modality": "SPECT",
     "level": 1,
     "title": "Characterization of technetium-99m-L,L-ECD for brain perfusion imaging, Part 1: Pharmacology of technetium-99m ECD in nonhuman primates.",
@@ -2275,20 +1989,33 @@
     "citation_count": 246
   },
   {
-    "id": "SPECT-04",
+    "id": "SPECT-06",
     "modality": "SPECT",
     "level": 1,
-    "title": "SPECT brain imaging in epilepsy: a meta-analysis.",
-    "first_author": "M. Devous",
-    "year": 1998,
-    "doi": null,
-    "url": "https://www.semanticscholar.org/paper/54bbebd2aa1e98e8c4c2e2191bd13292b102bc65",
-    "venue": "Journal of Nuclear Medicine",
-    "s2_id": "54bbebd2aa1e98e8c4c2e2191bd13292b102bc65",
-    "citation_count": 235
+    "title": "A new method for modeling the spatially-variant, object-dependent scatter response function in SPECT",
+    "first_author": "E. Frey",
+    "year": 1996,
+    "doi": "10.1109/nssmic.1996.591559",
+    "url": "https://doi.org/10.1109/nssmic.1996.591559",
+    "venue": "IEEE Nuclear Science Symposium Conference Record",
+    "s2_id": "15b870c7e6950996409cb1dcac5638e4ba7e15ef",
+    "citation_count": 246
   },
   {
-    "id": "SPECT-05",
+    "id": "SPECT-07",
+    "modality": "SPECT",
+    "level": 1,
+    "title": "A dual-photopeak window method for scatter correction.",
+    "first_author": "Matt A. King",
+    "year": 1992,
+    "doi": null,
+    "url": "https://www.semanticscholar.org/paper/281298398eedd04050ad2ed2e9cef01b0a6c9108",
+    "venue": "Journal of Nuclear Medicine",
+    "s2_id": "281298398eedd04050ad2ed2e9cef01b0a6c9108",
+    "citation_count": 232
+  },
+  {
+    "id": "SPECT-08",
     "modality": "SPECT",
     "level": 1,
     "title": "Difference images calculated from ictal and interictal technetium-99m-HMPAO SPECT scans of epilepsy.",
@@ -2301,33 +2028,7 @@
     "citation_count": 180
   },
   {
-    "id": "SPECT-06",
-    "modality": "SPECT",
-    "level": 1,
-    "title": "Functional brain SPECT: the emergence of a powerful clinical method.",
-    "first_author": "B. Holman",
-    "year": 1992,
-    "doi": null,
-    "url": "https://www.semanticscholar.org/paper/d48f6dbb7397bcca99040eb4f3f4ebfa3b235574",
-    "venue": "Journal of Nuclear Medicine",
-    "s2_id": "d48f6dbb7397bcca99040eb4f3f4ebfa3b235574",
-    "citation_count": 170
-  },
-  {
-    "id": "SPECT-07",
-    "modality": "SPECT",
-    "level": 1,
-    "title": "Comparison of ictal SPECT and interictal PET in the presurgical evaluation of temporal lobe epilepsy",
-    "first_author": "Susan S. Ho",
-    "year": 1995,
-    "doi": "10.1002/ana.410370607",
-    "url": "https://doi.org/10.1002/ana.410370607",
-    "venue": "Annals of Neurology",
-    "s2_id": "e8eba87627363c4091ff4666444b9f94762ebbbd",
-    "citation_count": 169
-  },
-  {
-    "id": "SPECT-08",
+    "id": "SPECT-09",
     "modality": "SPECT",
     "level": 1,
     "title": "Intrasubject comparison between technetium-99m-ECD and technetium-99m-HMPAO in healthy human subjects.",
@@ -2338,19 +2039,6 @@
     "venue": "Journal of Nuclear Medicine",
     "s2_id": "39611dc0d18f5c8d6cb80c22ece130cdc4023456",
     "citation_count": 140
-  },
-  {
-    "id": "SPECT-09",
-    "modality": "SPECT",
-    "level": 1,
-    "title": "Comparative analysis of MR imaging, positron emission tomography, and ictal single-photon emission CT in patients with neocortical epilepsy.",
-    "first_author": "S. Hwang",
-    "year": 2001,
-    "doi": null,
-    "url": "https://www.semanticscholar.org/paper/09b9b823631078fcac5280cb9274ebc1ff1a3e73",
-    "venue": "AJNR. American journal of neuroradiology",
-    "s2_id": "09b9b823631078fcac5280cb9274ebc1ff1a3e73",
-    "citation_count": 113
   },
   {
     "id": "SPECT-10",
@@ -2369,290 +2057,69 @@
     "id": "CT-R1",
     "modality": "CT",
     "level": 0,
-    "title": "Medical image analysis methods in MR/CT-imaged acute-subacute ischemic stroke lesion: Segmentation, prediction and insights into dynamic evolution simulation models. A critical appraisal",
-    "first_author": "I. Rekik",
-    "year": 2012,
-    "doi": "10.1016/j.nicl.2012.10.003",
-    "url": "https://doi.org/10.1016/j.nicl.2012.10.003",
-    "venue": "NeuroImage: Clinical",
-    "s2_id": "8e5bd7bedcf30c353687cfe2f5479e7763a5d7e2",
-    "citation_count": 160
+    "title": "CT Noise-Reduction Methods for Lower-Dose Scanning: Strengths and Weaknesses of Iterative Reconstruction Algorithms and New Techniques.",
+    "first_author": "P. Mohammadinejad",
+    "year": 2021,
+    "doi": "10.1148/rg.2021200196",
+    "url": "https://doi.org/10.1148/rg.2021200196",
+    "venue": "Radiographics",
+    "s2_id": "ac2ba7328a962b4a75c34c6547928e802bc0eca9",
+    "citation_count": 102
   },
   {
     "id": "CT-R2",
     "modality": "CT",
     "level": 0,
-    "title": "Quick guide on radiology image pre-processing for deep learning applications in prostate cancer research",
-    "first_author": "Samira Masoudi",
-    "year": 2021,
-    "doi": "10.1117/1.jmi.8.1.010901",
-    "url": "https://doi.org/10.1117/1.jmi.8.1.010901",
-    "venue": "Journal of Medical Imaging",
-    "s2_id": "af269df7a962d241d569681e4ea6ad70b856c379",
-    "citation_count": 66
+    "title": "A Review of deep learning methods for denoising of medical low-dose CT images",
+    "first_author": "Ju Zhang",
+    "year": 2024,
+    "doi": "10.1016/j.compbiomed.2024.108112",
+    "url": "https://doi.org/10.1016/j.compbiomed.2024.108112",
+    "venue": "Comput. Biol. Medicine",
+    "s2_id": "e98e6c4bf81bf9cbb8204048d9ab5f7eadb1cb80",
+    "citation_count": 83
   },
   {
     "id": "CT-R3",
     "modality": "CT",
     "level": 0,
-    "title": "Probabilistic Air Segmentation and Sparse Regression Estimated Pseudo CT for PET/MR Attenuation Correction",
-    "first_author": "Yasheng Chen",
-    "year": 2014,
-    "doi": "10.1148/radiol.14140810",
-    "url": "https://doi.org/10.1148/radiol.14140810",
-    "venue": "Radiology",
-    "s2_id": "cab2e07dbb7aa44e1b7d37251e71839d65f95bb7",
-    "citation_count": 38
+    "title": "CT image denoising methods for image quality improvement and radiation dose reduction",
+    "first_author": "R. Sadia",
+    "year": 2024,
+    "doi": "10.1002/acm2.14270",
+    "url": "https://doi.org/10.1002/acm2.14270",
+    "venue": "Journal of Applied Clinical Medical Physics",
+    "s2_id": "8cd7a801629630ff55a86425a38dd8169170851d",
+    "citation_count": 63
   },
   {
     "id": "CT-01",
     "modality": "CT",
     "level": 1,
-    "title": "Segmentation of brain MR images through a hidden Markov random field model and the expectation-maximization algorithm",
-    "first_author": "Yongyue Zhang",
-    "year": 2001,
-    "doi": "10.1109/42.906424",
-    "url": "https://doi.org/10.1109/42.906424",
+    "title": "Low Dose CT Image Denoising Using a Generative Adversarial Network with Wasserstein Distance and Perceptual Loss",
+    "first_author": "Qingsong Yang",
+    "year": 2017,
+    "doi": "10.1109/TMI.2018.2827462",
+    "url": "https://doi.org/10.1109/TMI.2018.2827462",
     "venue": "IEEE Transactions on Medical Imaging",
-    "s2_id": "7d5aedecdfc4e8f83638bac47eb7cf2f860ec51c",
-    "citation_count": 7352
+    "s2_id": "125246099c1a21469af6735480bae2c426c31cd5",
+    "citation_count": 1421
   },
   {
     "id": "CT-02",
     "modality": "CT",
     "level": 1,
-    "title": "A global optimisation method for robust affine registration of brain images",
-    "first_author": "M. Jenkinson",
-    "year": 2001,
-    "doi": "10.1016/s1361-8415(01)00036-6",
-    "url": "https://doi.org/10.1016/s1361-8415(01)00036-6",
-    "venue": "Medical Image Anal.",
-    "s2_id": "7d6365839a069042c79f1cb6471045c61566eaa0",
-    "citation_count": 7156
+    "title": "Convolutional Neural Network based Metal Artifact Reduction in X-ray Computed Tomography",
+    "first_author": "Yanbo Zhang",
+    "year": 2017,
+    "doi": "10.1109/TMI.2018.2823083",
+    "url": "https://doi.org/10.1109/TMI.2018.2823083",
+    "venue": "IEEE Transactions on Medical Imaging",
+    "s2_id": "833ec94c0b95a961accf93f624e8d17e09f381e3",
+    "citation_count": 443
   },
   {
     "id": "CT-03",
-    "modality": "CT",
-    "level": 1,
-    "title": "Symmetric diffeomorphic image registration with cross-correlation: Evaluating automated labeling of elderly and neurodegenerative brain",
-    "first_author": "B. Avants",
-    "year": 2008,
-    "doi": "10.1016/j.media.2007.06.004",
-    "url": "https://doi.org/10.1016/j.media.2007.06.004",
-    "venue": "Medical Image Anal.",
-    "s2_id": "66b498a54843e14270b75f0c3c8fc65a0b2e1e98",
-    "citation_count": 5702
-  },
-  {
-    "id": "CT-04",
-    "modality": "CT",
-    "level": 1,
-    "title": "N4ITK: Improved N3 Bias Correction",
-    "first_author": "N. Tustison",
-    "year": 2010,
-    "doi": "10.1109/tmi.2010.2046908",
-    "url": "https://doi.org/10.1109/tmi.2010.2046908",
-    "venue": "IEEE Transactions on Medical Imaging",
-    "s2_id": "3bda8b8dd09117f7d5abc12cf4581ac50b6412ee",
-    "citation_count": 5673
-  },
-  {
-    "id": "CT-05",
-    "modality": "CT",
-    "level": 1,
-    "title": "Artificial intelligence in radiology",
-    "first_author": "A. Hosny",
-    "year": 2018,
-    "doi": "10.1038/s41568-018-0016-5",
-    "url": "https://doi.org/10.1038/s41568-018-0016-5",
-    "venue": "Nature Reviews. Cancer",
-    "s2_id": "b9ede5f604668d0b62a306392cd03f47086e245e",
-    "citation_count": 3195
-  },
-  {
-    "id": "CT-06",
-    "modality": "CT",
-    "level": 1,
-    "title": "Current methods in medical image segmentation.",
-    "first_author": "D. Pham",
-    "year": 2000,
-    "doi": "10.1146/annurev.bioeng.2.1.315",
-    "url": "https://doi.org/10.1146/annurev.bioeng.2.1.315",
-    "venue": "Annual Review of Biomedical Engineering",
-    "s2_id": "9b0d18a9d1faa618d466fef25ef36f1ddc02030b",
-    "citation_count": 2566
-  },
-  {
-    "id": "CT-07",
-    "modality": "CT",
-    "level": 1,
-    "title": "Evaluation of 14 nonlinear deformation algorithms applied to human brain MRI registration",
-    "first_author": "A. Klein",
-    "year": 2009,
-    "doi": "10.1016/j.neuroimage.2008.12.037",
-    "url": "https://doi.org/10.1016/j.neuroimage.2008.12.037",
-    "venue": "NeuroImage",
-    "s2_id": "6d2669ebc27f776d940ca95db0ad4ae455316cf2",
-    "citation_count": 2376
-  },
-  {
-    "id": "CT-08",
-    "modality": "CT",
-    "level": 1,
-    "title": "Adaptive Segmentation of MRI Data",
-    "first_author": "W. Wells",
-    "year": 1995,
-    "doi": "10.1007/978-3-540-49197-2_7",
-    "url": "https://doi.org/10.1007/978-3-540-49197-2_7",
-    "venue": "Computer Vision, Virtual Reality and Robotics in Medicine",
-    "s2_id": "732e1de5ba6e294f129030e3d9c922c56f4a4b0f",
-    "citation_count": 1526
-  },
-  {
-    "id": "CT-09",
-    "modality": "CT",
-    "level": 1,
-    "title": "Nonlinear anisotropic filtering of MRI data",
-    "first_author": "G. Gerig",
-    "year": 1992,
-    "doi": "10.1109/42.141646",
-    "url": "https://doi.org/10.1109/42.141646",
-    "venue": "IEEE Trans. Medical Imaging",
-    "s2_id": "e19d7045599b2a0bb975789d8f7593ebdfddfee0",
-    "citation_count": 1328
-  },
-  {
-    "id": "CT-10",
-    "modality": "CT",
-    "level": 1,
-    "title": "Medical Image Analysis: Progress over Two Decades and the Challenges Ahead",
-    "first_author": "J. Duncan",
-    "year": 2000,
-    "doi": "10.1109/34.824822",
-    "url": "https://doi.org/10.1109/34.824822",
-    "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
-    "s2_id": "8a7ba32e35eab6a7d86538e0e333df64fb0dca73",
-    "citation_count": 1309
-  },
-  {
-    "id": "CT-11",
-    "modality": "CT",
-    "level": 1,
-    "title": "Survey of Medical Image Registration",
-    "first_author": "V. Mani",
-    "year": 2013,
-    "doi": "10.12691/jbet-1-2-1",
-    "url": "https://doi.org/10.12691/jbet-1-2-1",
-    "venue": "",
-    "s2_id": "77fd2274155a76d0df7ac3abd65c90408d452161",
-    "citation_count": 1147
-  },
-  {
-    "id": "CT-12",
-    "modality": "CT",
-    "level": 1,
-    "title": "Comparison of Interpolating Methods for Image Resampling",
-    "first_author": "J. Parker",
-    "year": 1983,
-    "doi": "10.1109/tmi.1983.4307610",
-    "url": "https://doi.org/10.1109/tmi.1983.4307610",
-    "venue": "IEEE Transactions on Medical Imaging",
-    "s2_id": "0e8e79be5d6bfe509611f469a7f551f9c87fa1a1",
-    "citation_count": 915
-  },
-  {
-    "id": "CT-13",
-    "modality": "CT",
-    "level": 1,
-    "title": "Image Segmentation",
-    "first_author": "F. Shih",
-    "year": 2007,
-    "doi": "10.1007/978-0-387-39940-9_1011",
-    "url": "https://doi.org/10.1007/978-0-387-39940-9_1011",
-    "venue": "Encyclopedia of Database Systems",
-    "s2_id": "abffc705d611f3b7451900e9e5a5b805907654d0",
-    "citation_count": 756
-  },
-  {
-    "id": "CT-14",
-    "modality": "CT",
-    "level": 1,
-    "title": "Tissue Classification as a Potential Approach for Attenuation Correction in Whole-Body PET/MRI: Evaluation with PET/CT Data",
-    "first_author": "A. Martinez-Möller",
-    "year": 2009,
-    "doi": "10.2967/jnumed.108.054726",
-    "url": "https://doi.org/10.2967/jnumed.108.054726",
-    "venue": "Journal of Nuclear Medicine",
-    "s2_id": "b25361edfe3f388d4ddef95d6f41cd49aa372d2c",
-    "citation_count": 751
-  },
-  {
-    "id": "CT-15",
-    "modality": "CT",
-    "level": 1,
-    "title": "Automated model-based bias field correction of MR images of the brain",
-    "first_author": "K. V. Leemput",
-    "year": 1999,
-    "doi": "10.1109/42.811268",
-    "url": "https://doi.org/10.1109/42.811268",
-    "venue": "IEEE Transactions on Medical Imaging",
-    "s2_id": "4b0a6593109de4bc31b1554ce12ed45fd76b81ee",
-    "citation_count": 693
-  },
-  {
-    "id": "CT-16",
-    "modality": "CT",
-    "level": 1,
-    "title": "A versatile wavelet domain noise filtration technique for medical imaging",
-    "first_author": "A. Pižurica",
-    "year": 2003,
-    "doi": "10.1109/tmi.2003.809588",
-    "url": "https://doi.org/10.1109/tmi.2003.809588",
-    "venue": "IEEE Transactions on Medical Imaging",
-    "s2_id": "9f2f648e544a3f60b00bc68dfcbdcf08eb851d63",
-    "citation_count": 588
-  },
-  {
-    "id": "CT-17",
-    "modality": "CT",
-    "level": 1,
-    "title": "MRI-Based Attenuation Correction for PET/MRI Using Ultrashort Echo Time Sequences",
-    "first_author": "V. Keereman",
-    "year": 2010,
-    "doi": "10.2967/jnumed.109.065425",
-    "url": "https://doi.org/10.2967/jnumed.109.065425",
-    "venue": "Journal of Nuclear Medicine",
-    "s2_id": "5c25681fe248f54f5714481925618e92e4b4c107",
-    "citation_count": 475
-  },
-  {
-    "id": "CT-18",
-    "modality": "CT",
-    "level": 1,
-    "title": "SimpleITK Image-Analysis Notebooks: a Collaborative Environment for Education and Reproducible Research",
-    "first_author": "Z. Yaniv",
-    "year": 2017,
-    "doi": "10.1007/s10278-017-0037-8",
-    "url": "https://doi.org/10.1007/s10278-017-0037-8",
-    "venue": "Journal of digital imaging",
-    "s2_id": "8882b1a1c507e07df8bd3ec0c857e80f5c7f90a1",
-    "citation_count": 453
-  },
-  {
-    "id": "CT-19",
-    "modality": "CT",
-    "level": 1,
-    "title": "Estimating the bias field of MR images",
-    "first_author": "R. Guillemaud",
-    "year": 1997,
-    "doi": "10.1109/42.585758",
-    "url": "https://doi.org/10.1109/42.585758",
-    "venue": "IEEE Transactions on Medical Imaging",
-    "s2_id": "cdbe696733259370ce061c083d69be190b1aaff1",
-    "citation_count": 376
-  },
-  {
-    "id": "CT-20",
     "modality": "CT",
     "level": 1,
     "title": "A review on CT image noise and its denoising",
@@ -2665,17 +2132,303 @@
     "citation_count": 374
   },
   {
+    "id": "CT-04",
+    "modality": "CT",
+    "level": 1,
+    "title": "A Model-Based Image Reconstruction Algorithm With Simultaneous Beam Hardening Correction for X-Ray CT",
+    "first_author": "Pengchong Jin",
+    "year": 2015,
+    "doi": "10.1109/TCI.2015.2461492",
+    "url": "https://doi.org/10.1109/TCI.2015.2461492",
+    "venue": "IEEE Transactions on Computational Imaging",
+    "s2_id": "3d1f0beb6c93bd9b13db7f0061b5c73ffad94823",
+    "citation_count": 158
+  },
+  {
+    "id": "CT-05",
+    "modality": "CT",
+    "level": 1,
+    "title": "Reconstruction algorithm for polychromatic CT imaging: application to beam hardening correction",
+    "first_author": "C. Yan",
+    "year": 2000,
+    "doi": "10.1109/42.832955",
+    "url": "https://doi.org/10.1109/42.832955",
+    "venue": "IEEE Transactions on Medical Imaging",
+    "s2_id": "beaea57e67199b38648fc7bf4edfc3135d628dd9",
+    "citation_count": 158
+  },
+  {
+    "id": "CT-06",
+    "modality": "CT",
+    "level": 1,
+    "title": "CT sinogram‐consistency learning for metal‐induced beam hardening correction",
+    "first_author": "Hyoung Suk Park",
+    "year": 2017,
+    "doi": "10.1002/mp.13199",
+    "url": "https://doi.org/10.1002/mp.13199",
+    "venue": "Medical Physics (Lancaster)",
+    "s2_id": "24f2fe9a03bec79c640749ce5f3988437b5773b1",
+    "citation_count": 137
+  },
+  {
+    "id": "CT-07",
+    "modality": "CT",
+    "level": 1,
+    "title": "Iterative Reconstruction in Head CT: Image Quality of Routine and Low-Dose Protocols in Comparison with Standard Filtered Back-Projection",
+    "first_author": "A. Korn",
+    "year": 2012,
+    "doi": "10.3174/ajnr.A2749",
+    "url": "https://doi.org/10.3174/ajnr.A2749",
+    "venue": "American Journal of Neuroradiology",
+    "s2_id": "5e484c2bc2e08ee325e24d5769f0b7bc3a69323a",
+    "citation_count": 136
+  },
+  {
+    "id": "CT-08",
+    "modality": "CT",
+    "level": 1,
+    "title": "High-Definition CT Gemstone Spectral Imaging of the Brain: Initial Results of Selecting Optimal Monochromatic Image for Beam-Hardening Artifacts and Image Noise Reduction",
+    "first_author": "Xiaoyan Lin",
+    "year": 2011,
+    "doi": "10.1097/RCT.0b013e3182058d5c",
+    "url": "https://doi.org/10.1097/RCT.0b013e3182058d5c",
+    "venue": "Journal of computer assisted tomography",
+    "s2_id": "5b04c705a98af0faebca725b39af9509f29bb913",
+    "citation_count": 125
+  },
+  {
+    "id": "CT-09",
+    "modality": "CT",
+    "level": 1,
+    "title": "CT iterative reconstruction algorithms: a task-based image quality assessment",
+    "first_author": "J. Greffier",
+    "year": 2019,
+    "doi": "10.1007/s00330-019-06359-6",
+    "url": "https://doi.org/10.1007/s00330-019-06359-6",
+    "venue": "European Radiology",
+    "s2_id": "98256de8fe38ce15a11bd42fbda40ba09d58711f",
+    "citation_count": 122
+  },
+  {
+    "id": "CT-10",
+    "modality": "CT",
+    "level": 1,
+    "title": "Deep 3D convolution neural network for CT brain hemorrhage classification",
+    "first_author": "K. Jnawali",
+    "year": 2018,
+    "doi": "10.1117/12.2293725",
+    "url": "https://doi.org/10.1117/12.2293725",
+    "venue": "Medical Imaging",
+    "s2_id": "1fd82f095432505d13bd9c74dd0c82b3a7066c3e",
+    "citation_count": 119
+  },
+  {
+    "id": "CT-11",
+    "modality": "CT",
+    "level": 1,
+    "title": "Cost-Sensitive Active Learning for Intracranial Hemorrhage Detection",
+    "first_author": "Weicheng Kuo",
+    "year": 2018,
+    "doi": "10.1007/978-3-030-00931-1_82",
+    "url": "https://doi.org/10.1007/978-3-030-00931-1_82",
+    "venue": "International Conference on Medical Image Computing and Computer-Assisted Intervention",
+    "s2_id": "018c48dc26686e9477b3cbf47e10c07375873525",
+    "citation_count": 105
+  },
+  {
+    "id": "CT-12",
+    "modality": "CT",
+    "level": 1,
+    "title": "Automated ASPECTS on Noncontrast CT Scans in Patients with Acute Ischemic Stroke Using Machine Learning",
+    "first_author": "Hulin Kuang",
+    "year": 2018,
+    "doi": "10.3174/ajnr.A5889",
+    "url": "https://doi.org/10.3174/ajnr.A5889",
+    "venue": "American Journal of Neuroradiology",
+    "s2_id": "6ec6d6d7f77b8670c6be76ca1cd6de61a94b8c3c",
+    "citation_count": 103
+  },
+  {
+    "id": "CT-13",
+    "modality": "CT",
+    "level": 1,
+    "title": "Low-Dose CT Image Denoising Using a Generative Adversarial Network With a Hybrid Loss Function for Noise Learning",
+    "first_author": "Yinjin Ma",
+    "year": 2020,
+    "doi": "10.1109/ACCESS.2020.2986388",
+    "url": "https://doi.org/10.1109/ACCESS.2020.2986388",
+    "venue": "IEEE Access",
+    "s2_id": "1a15d485f9c03360496d8ef07a36d6d2c468ad7f",
+    "citation_count": 86
+  },
+  {
+    "id": "CT-14",
+    "modality": "CT",
+    "level": 1,
+    "title": "Validated Automatic Brain Extraction of Head CT Images",
+    "first_author": "J. Muschelli",
+    "year": 2015,
+    "doi": "10.1016/j.neuroimage.2015.03.074",
+    "url": "https://doi.org/10.1016/j.neuroimage.2015.03.074",
+    "venue": "NeuroImage",
+    "s2_id": "25880f664d188676b29694776d6bd69b1b333399",
+    "citation_count": 86
+  },
+  {
+    "id": "CT-15",
+    "modality": "CT",
+    "level": 1,
+    "title": "Deep learning–based image reconstruction for brain CT: improved image quality compared with adaptive statistical iterative reconstruction-Veo (ASIR-V)",
+    "first_author": "Injoong Kim",
+    "year": 2020,
+    "doi": "10.1007/s00234-020-02574-x",
+    "url": "https://doi.org/10.1007/s00234-020-02574-x",
+    "venue": "Neuroradiology",
+    "s2_id": "be75ef8bc4984f59f8a719260ed413e66cebb4fe",
+    "citation_count": 76
+  },
+  {
+    "id": "CT-16",
+    "modality": "CT",
+    "level": 1,
+    "title": "Investigation of Low-Dose CT Image Denoising Using Unpaired Deep Learning Methods",
+    "first_author": "Zeheng Li",
+    "year": 2020,
+    "doi": "10.1109/TRPMS.2020.3007583",
+    "url": "https://doi.org/10.1109/TRPMS.2020.3007583",
+    "venue": "IEEE Transactions on Radiation and Plasma Medical Sciences",
+    "s2_id": "d2ec944b5a9df970dde3231127492f0ee2486f4e",
+    "citation_count": 76
+  },
+  {
+    "id": "CT-17",
+    "modality": "CT",
+    "level": 1,
+    "title": "Simulation study on potential accuracy gains from dual energy CT tissue segmentation for low-energy brachytherapy Monte Carlo dose calculations",
+    "first_author": "G. Landry",
+    "year": 2011,
+    "doi": "10.1088/0031-9155/56/19/007",
+    "url": "https://doi.org/10.1088/0031-9155/56/19/007",
+    "venue": "Physics in Medicine and Biology",
+    "s2_id": "d07115fe1c6de1a40474356b603a8513a173ce5a",
+    "citation_count": 70
+  },
+  {
+    "id": "CT-18",
+    "modality": "CT",
+    "level": 1,
+    "title": "Intracranial hemorrhage detection using spatial fuzzy c-mean and region-based active contour on brain CT imaging",
+    "first_author": "H. Bhadauria",
+    "year": 2012,
+    "doi": "10.1007/s11760-012-0298-0",
+    "url": "https://doi.org/10.1007/s11760-012-0298-0",
+    "venue": "Signal, Image and Video Processing",
+    "s2_id": "db00e13ba0e060eaed5b6e92ab7e7ee16f4d4397",
+    "citation_count": 69
+  },
+  {
+    "id": "CT-19",
+    "modality": "CT",
+    "level": 1,
+    "title": "An optimal deep learning framework for multi-type hemorrhagic lesions detection and quantification in head CT images for traumatic brain injury",
+    "first_author": "Aniwat Phaphuangwittayakul",
+    "year": 2021,
+    "doi": "10.1007/s10489-021-02782-9",
+    "url": "https://doi.org/10.1007/s10489-021-02782-9",
+    "venue": "Applied intelligence (Boston)",
+    "s2_id": "87426bdb888a04316ae2e40c7b02a05ddb2c5c12",
+    "citation_count": 68
+  },
+  {
+    "id": "CT-20",
+    "modality": "CT",
+    "level": 1,
+    "title": "C-Arm CT Measurement of Cerebral Blood Volume: An Experimental Study in Canines",
+    "first_author": "Azam S. Ahmed",
+    "year": 2009,
+    "doi": "10.3174/ajnr.A1513",
+    "url": "https://doi.org/10.3174/ajnr.A1513",
+    "venue": "American Journal of Neuroradiology",
+    "s2_id": "8e2b1bb3ac7687a5f163b8bbe2d53a1eb32813c3",
+    "citation_count": 67
+  },
+  {
     "id": "CT-21",
     "modality": "CT",
     "level": 1,
-    "title": "Toward Implementing an MRI-Based PET Attenuation-Correction Method for Neurologic Studies on the MR-PET Brain Prototype",
-    "first_author": "C. Catana",
-    "year": 2010,
-    "doi": "10.2967/jnumed.109.069112",
-    "url": "https://doi.org/10.2967/jnumed.109.069112",
-    "venue": "Journal of Nuclear Medicine",
-    "s2_id": "4d58afa032133c60e49fec1dd34714a4c6647dca",
-    "citation_count": 372
+    "title": "Automatic hemorrhage segmentation on head CT scan for traumatic brain injury using 3D deep learning model",
+    "first_author": "Papangkorn Inkeaw",
+    "year": 2022,
+    "doi": "10.1016/j.compbiomed.2022.105530",
+    "url": "https://doi.org/10.1016/j.compbiomed.2022.105530",
+    "venue": "Comput. Biol. Medicine",
+    "s2_id": "50bb76524b9f9982e9ea8c90d7f1f87265829c12",
+    "citation_count": 60
+  },
+  {
+    "id": "CT-22",
+    "modality": "CT",
+    "level": 1,
+    "title": "Diffusion probabilistic priors for zero‐shot low‐dose CT image denoising",
+    "first_author": "X. Liu",
+    "year": 2023,
+    "doi": "10.1002/mp.17431",
+    "url": "https://doi.org/10.1002/mp.17431",
+    "venue": "Medical Physics (Lancaster)",
+    "s2_id": "3b548b695bee5da26eb674f7a76f43713c543c5e",
+    "citation_count": 58
+  },
+  {
+    "id": "CT-23",
+    "modality": "CT",
+    "level": 1,
+    "title": "Reproducibility of postprocessing of quantitative CT perfusion maps.",
+    "first_author": "P. Sanelli",
+    "year": 2007,
+    "doi": "10.2214/AJR.05.2188",
+    "url": "https://doi.org/10.2214/AJR.05.2188",
+    "venue": "AJR. American journal of roentgenology",
+    "s2_id": "50fc37ff433c17235ab10f494a5fa46baad96059",
+    "citation_count": 54
+  },
+  {
+    "id": "CT-24",
+    "modality": "CT",
+    "level": 1,
+    "title": "The effect of threshold level on bone segmentation of cranial base structures from CT and CBCT images",
+    "first_author": "Luca Friedli",
+    "year": 2020,
+    "doi": "10.1038/s41598-020-64383-9",
+    "url": "https://doi.org/10.1038/s41598-020-64383-9",
+    "venue": "Scientific Reports",
+    "s2_id": "4c845eacd33319ea4cc45eb725616a7cf187ec96",
+    "citation_count": 51
+  },
+  {
+    "id": "CT-25",
+    "modality": "CT",
+    "level": 1,
+    "title": "Semantic Segmentation of Intracranial Hemorrhages in Head CT Scans",
+    "first_author": "Yuhang Qiu",
+    "year": 2019,
+    "doi": "10.1109/ICSESS47205.2019.9040733",
+    "url": "https://doi.org/10.1109/ICSESS47205.2019.9040733",
+    "venue": "2019 IEEE 10th International Conference on Software Engineering and Service Science (ICSESS)",
+    "s2_id": "6c3e2350fe13430a851bf9e195b679aeafd80a1f",
+    "citation_count": 50
+  },
+  {
+    "id": "CT-26",
+    "modality": "CT",
+    "level": 1,
+    "title": "The state-of-the-art 3D anisotropic intracranial hemorrhage segmentation on non-contrast head CT: The INSTANCE challenge",
+    "first_author": "Xiangyu Li",
+    "year": 2023,
+    "doi": "10.48550/arXiv.2301.03281",
+    "url": "https://doi.org/10.48550/arXiv.2301.03281",
+    "venue": "arXiv.org",
+    "s2_id": "25853af1f2c73274ad7c62b502c021aef3e67f6d",
+    "citation_count": 46
   },
   {
     "id": "FNIRS-R1",
@@ -2720,19 +2473,6 @@
     "id": "FNIRS-01",
     "modality": "fNIRS",
     "level": 1,
-    "title": "Least-Squares Fitting of Two 3-D Point Sets",
-    "first_author": "K. S. Arun",
-    "year": 1987,
-    "doi": "10.1109/tpami.1987.4767965",
-    "url": "https://doi.org/10.1109/tpami.1987.4767965",
-    "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
-    "s2_id": "691d0a287a2515ebe5019cda498dcb6d24dfd5a4",
-    "citation_count": 4416
-  },
-  {
-    "id": "FNIRS-02",
-    "modality": "fNIRS",
-    "level": 1,
     "title": "Estimation of optical pathlength through tissue from direct time of flight measurement.",
     "first_author": "D. Delpy",
     "year": 1988,
@@ -2743,7 +2483,7 @@
     "citation_count": 2340
   },
   {
-    "id": "FNIRS-03",
+    "id": "FNIRS-02",
     "modality": "fNIRS",
     "level": 1,
     "title": "A review on continuous wave functional near-infrared spectroscopy and imaging instrumentation and methodology",
@@ -2756,7 +2496,7 @@
     "citation_count": 1833
   },
   {
-    "id": "FNIRS-04",
+    "id": "FNIRS-03",
     "modality": "fNIRS",
     "level": 1,
     "title": "HomER: a review of time-series analysis methods for near-infrared spectroscopy of the brain.",
@@ -2769,20 +2509,7 @@
     "citation_count": 1668
   },
   {
-    "id": "FNIRS-05",
-    "modality": "fNIRS",
-    "level": 1,
-    "title": "10/20, 10/10, and 10/5 systems revisited: Their validity as relative head-surface-based positioning systems",
-    "first_author": "V. Jurcak",
-    "year": 2007,
-    "doi": "10.1016/j.neuroimage.2006.09.024",
-    "url": "https://doi.org/10.1016/j.neuroimage.2006.09.024",
-    "venue": "NeuroImage",
-    "s2_id": "94dc84d846b91e18cbb3bf9c2caf394aec3a22cf",
-    "citation_count": 1480
-  },
-  {
-    "id": "FNIRS-06",
+    "id": "FNIRS-04",
     "modality": "fNIRS",
     "level": 1,
     "title": "A Quantitative Comparison of Simultaneous BOLD fMRI and NIRS Recordings during Functional Brain Activation",
@@ -2795,20 +2522,7 @@
     "citation_count": 1392
   },
   {
-    "id": "FNIRS-07",
-    "modality": "fNIRS",
-    "level": 1,
-    "title": "Scanning the horizon: towards transparent and reproducible neuroimaging research",
-    "first_author": "R. Poldrack",
-    "year": 2016,
-    "doi": "10.1038/nrn.2016.167",
-    "url": "https://doi.org/10.1038/nrn.2016.167",
-    "venue": "Nature Reviews Neuroscience",
-    "s2_id": "7e07d99521053a210897153ef4c4cf36f9fadefc",
-    "citation_count": 1291
-  },
-  {
-    "id": "FNIRS-08",
+    "id": "FNIRS-05",
     "modality": "fNIRS",
     "level": 1,
     "title": "The present and future use of functional near‐infrared spectroscopy (fNIRS) for cognitive neuroscience",
@@ -2821,7 +2535,7 @@
     "citation_count": 1113
   },
   {
-    "id": "FNIRS-09",
+    "id": "FNIRS-06",
     "modality": "fNIRS",
     "level": 1,
     "title": "fNIRS-based brain-computer interfaces: a review",
@@ -2834,7 +2548,7 @@
     "citation_count": 930
   },
   {
-    "id": "FNIRS-10",
+    "id": "FNIRS-07",
     "modality": "fNIRS",
     "level": 1,
     "title": "Illuminating the developing brain: the past, present and future of functional near infrared spectroscopy.",
@@ -2847,7 +2561,7 @@
     "citation_count": 797
   },
   {
-    "id": "FNIRS-11",
+    "id": "FNIRS-08",
     "modality": "fNIRS",
     "level": 1,
     "title": "Assessment of the cerebral cortex during motor task behaviours in adults: A systematic review of functional near infrared spectroscopy (fNIRS) studies",
@@ -2860,7 +2574,7 @@
     "citation_count": 470
   },
   {
-    "id": "FNIRS-12",
+    "id": "FNIRS-09",
     "modality": "fNIRS",
     "level": 1,
     "title": "A Systematic Comparison of Motion Artifact Correction Techniques for Functional Near-Infrared Spectroscopy",
@@ -2873,7 +2587,7 @@
     "citation_count": 407
   },
   {
-    "id": "FNIRS-13",
+    "id": "FNIRS-10",
     "modality": "fNIRS",
     "level": 1,
     "title": "Sensitivity of fNIRS to cognitive state and load",
@@ -2886,7 +2600,7 @@
     "citation_count": 299
   },
   {
-    "id": "FNIRS-14",
+    "id": "FNIRS-11",
     "modality": "fNIRS",
     "level": 1,
     "title": "A Review on the Use of Wearable Functional Near-Infrared Spectroscopy in Naturalistic Environments.",
@@ -2899,7 +2613,7 @@
     "citation_count": 286
   },
   {
-    "id": "FNIRS-15",
+    "id": "FNIRS-12",
     "modality": "fNIRS",
     "level": 1,
     "title": "Removal of the skin blood flow artifact in functional near-infrared spectroscopic imaging data through independent component analysis.",
@@ -2912,7 +2626,7 @@
     "citation_count": 229
   },
   {
-    "id": "FNIRS-16",
+    "id": "FNIRS-13",
     "modality": "fNIRS",
     "level": 1,
     "title": "Motion artifact detection and correction in functional near-infrared spectroscopy: a new hybrid method based on spline interpolation method and Savitzky–Golay filtering",
@@ -2925,7 +2639,7 @@
     "citation_count": 190
   },
   {
-    "id": "FNIRS-17",
+    "id": "FNIRS-14",
     "modality": "fNIRS",
     "level": 1,
     "title": "Recommendations for motion correction of infant fNIRS data applicable to multiple data sets and acquisition systems",
@@ -2938,7 +2652,7 @@
     "citation_count": 165
   },
   {
-    "id": "FNIRS-18",
+    "id": "FNIRS-15",
     "modality": "fNIRS",
     "level": 1,
     "title": "fNIRS response during walking — Artefact or cortical activity? A systematic review",
@@ -2951,7 +2665,7 @@
     "citation_count": 163
   },
   {
-    "id": "FNIRS-19",
+    "id": "FNIRS-16",
     "modality": "fNIRS",
     "level": 1,
     "title": "A Narrative Review on Clinical Applications of fNIRS",
@@ -2962,5 +2676,369 @@
     "venue": "Journal of digital imaging",
     "s2_id": "990cd265a5e3112886803073d267988cb6f98bc8",
     "citation_count": 142
+  },
+  {
+    "id": "CROSS-01",
+    "modality": "Cross-modality",
+    "level": 1,
+    "title": "A Threshold Selection Method from Gray-Level Histograms",
+    "first_author": "N. Otsu",
+    "year": 1979,
+    "doi": "10.1109/tsmc.1979.4310076",
+    "url": "https://doi.org/10.1109/tsmc.1979.4310076",
+    "venue": "IEEE Transactions on Systems, Man and Cybernetics",
+    "s2_id": "91343f9ce2e7d702c2ff837830bd35259ff8fd99",
+    "citation_count": 43237
+  },
+  {
+    "id": "CROSS-02",
+    "modality": "Cross-modality",
+    "level": 1,
+    "title": "Nonlinear total variation based noise removal algorithms",
+    "first_author": "L. Rudin",
+    "year": 1992,
+    "doi": "10.1016/0167-2789(92)90242-f",
+    "url": "https://doi.org/10.1016/0167-2789(92)90242-f",
+    "venue": "",
+    "s2_id": "54205667c1f65a320f667d73c354ed8e86f1b9d9",
+    "citation_count": 16782
+  },
+  {
+    "id": "CROSS-03",
+    "modality": "Cross-modality",
+    "level": 1,
+    "title": "Advances in functional and structural MR image analysis and implementation as FSL.",
+    "first_author": "Stephen M. Smith",
+    "year": 2004,
+    "doi": "10.1016/j.neuroimage.2004.07.051",
+    "url": "https://doi.org/10.1016/j.neuroimage.2004.07.051",
+    "venue": "NeuroImage",
+    "s2_id": "1a77e19441f3a0e030998fb2d11d9dd774582403",
+    "citation_count": 13998
+  },
+  {
+    "id": "CROSS-04",
+    "modality": "Cross-modality",
+    "level": 1,
+    "title": "Improved Optimization for the Robust and Accurate Linear Registration and Motion Correction of Brain Images",
+    "first_author": "M. Jenkinson",
+    "year": 2002,
+    "doi": "10.1016/s1053-8119(02)91132-8",
+    "url": "https://doi.org/10.1016/s1053-8119(02)91132-8",
+    "venue": "NeuroImage",
+    "s2_id": "291c9d66cf886ed27d89dc03d42a4612b66ab007",
+    "citation_count": 12244
+  },
+  {
+    "id": "CROSS-05",
+    "modality": "Cross-modality",
+    "level": 1,
+    "title": "Fast robust automated brain extraction",
+    "first_author": "Stephen M. Smith",
+    "year": 2002,
+    "doi": "10.1002/hbm.10062",
+    "url": "https://doi.org/10.1002/hbm.10062",
+    "venue": "Human Brain Mapping",
+    "s2_id": "84f2a000ec32f9394ca6cd823c5cf724be9b5a9b",
+    "citation_count": 11043
+  },
+  {
+    "id": "CROSS-06",
+    "modality": "Cross-modality",
+    "level": 1,
+    "title": "An Information-Maximization Approach to Blind Separation and Blind Deconvolution",
+    "first_author": "A. Bell",
+    "year": 1995,
+    "doi": "10.1162/neco.1995.7.6.1129",
+    "url": "https://doi.org/10.1162/neco.1995.7.6.1129",
+    "venue": "Neural Computation",
+    "s2_id": "1d7d0e8c4791700defd4b0df82a26b50055346e0",
+    "citation_count": 9777
+  },
+  {
+    "id": "CROSS-07",
+    "modality": "Cross-modality",
+    "level": 1,
+    "title": "A global optimisation method for robust affine registration of brain images",
+    "first_author": "M. Jenkinson",
+    "year": 2001,
+    "doi": "10.1016/s1361-8415(01)00036-6",
+    "url": "https://doi.org/10.1016/s1361-8415(01)00036-6",
+    "venue": "Medical Image Anal.",
+    "s2_id": "7d6365839a069042c79f1cb6471045c61566eaa0",
+    "citation_count": 7156
+  },
+  {
+    "id": "CROSS-08",
+    "modality": "Cross-modality",
+    "level": 1,
+    "title": "Nonrigid registration using free-form deformations: application to breast MR images",
+    "first_author": "D. Rueckert",
+    "year": 1999,
+    "doi": "10.1109/42.796284",
+    "url": "https://doi.org/10.1109/42.796284",
+    "venue": "IEEE Transactions on Medical Imaging",
+    "s2_id": "186050bcbecc5a8f2caa76ae9d283bd7bb2c283d",
+    "citation_count": 5716
+  },
+  {
+    "id": "CROSS-09",
+    "modality": "Cross-modality",
+    "level": 1,
+    "title": "Symmetric diffeomorphic image registration with cross-correlation: Evaluating automated labeling of elderly and neurodegenerative brain",
+    "first_author": "B. Avants",
+    "year": 2008,
+    "doi": "10.1016/j.media.2007.06.004",
+    "url": "https://doi.org/10.1016/j.media.2007.06.004",
+    "venue": "Medical Image Anal.",
+    "s2_id": "66b498a54843e14270b75f0c3c8fc65a0b2e1e98",
+    "citation_count": 5702
+  },
+  {
+    "id": "CROSS-10",
+    "modality": "Cross-modality",
+    "level": 1,
+    "title": "New advances in the Clinica software platform for clinical neuroimaging studies",
+    "first_author": "A. Routier",
+    "year": 2019,
+    "doi": "10.1016/j.neuroimage.2011.09.015",
+    "url": "https://doi.org/10.1016/j.neuroimage.2011.09.015",
+    "venue": "",
+    "s2_id": "3fd75c857fca6d13ee45986f06857b4fdd9ff65e",
+    "citation_count": 5634
+  },
+  {
+    "id": "CROSS-11",
+    "modality": "Cross-modality",
+    "level": 1,
+    "title": "The Minimal Preprocessing Pipelines for the Human Connectome Project",
+    "first_author": "M. Glasser",
+    "year": 2013,
+    "doi": "10.1016/j.neuroimage.2013.04.127",
+    "url": "https://doi.org/10.1016/j.neuroimage.2013.04.127",
+    "venue": "NeuroImage",
+    "s2_id": "b18ddb0b6b7518526bce6450cea66af5fde4d37e",
+    "citation_count": 5264
+  },
+  {
+    "id": "CROSS-12",
+    "modality": "Cross-modality",
+    "level": 1,
+    "title": "A Reproducible Evaluation of ANTs Similarity Metric Performance in Brain Image Registration",
+    "first_author": "B. Avants",
+    "year": 2010,
+    "doi": "10.1016/j.neuroimage.2010.09.025",
+    "url": "https://doi.org/10.1016/j.neuroimage.2010.09.025",
+    "venue": "NeuroImage",
+    "s2_id": "2dd32ff6608812d9b5d3877340df1cf9fceda08f",
+    "citation_count": 4597
+  },
+  {
+    "id": "CROSS-13",
+    "modality": "Cross-modality",
+    "level": 1,
+    "title": "Least-Squares Fitting of Two 3-D Point Sets",
+    "first_author": "K. S. Arun",
+    "year": 1987,
+    "doi": "10.1109/tpami.1987.4767965",
+    "url": "https://doi.org/10.1109/tpami.1987.4767965",
+    "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "s2_id": "691d0a287a2515ebe5019cda498dcb6d24dfd5a4",
+    "citation_count": 4416
+  },
+  {
+    "id": "CROSS-14",
+    "modality": "Cross-modality",
+    "level": 1,
+    "title": "Beamforming: a versatile approach to spatial filtering",
+    "first_author": "B. D. Van",
+    "year": 1988,
+    "doi": "10.1109/53.665",
+    "url": "https://doi.org/10.1109/53.665",
+    "venue": "IEEE ASSP Magazine",
+    "s2_id": "cc1c0876c066b2e11bad73c71c27632872a68ae0",
+    "citation_count": 4264
+  },
+  {
+    "id": "CROSS-15",
+    "modality": "Cross-modality",
+    "level": 1,
+    "title": "Spatial registration and normalization of images",
+    "first_author": "Karl J. Friston",
+    "year": 1995,
+    "doi": "10.1002/hbm.460030303",
+    "url": "https://doi.org/10.1002/hbm.460030303",
+    "venue": "",
+    "s2_id": "8f0556791ef80a5146f489c799e85fb2ac46d1bd",
+    "citation_count": 3933
+  },
+  {
+    "id": "CROSS-16",
+    "modality": "Cross-modality",
+    "level": 1,
+    "title": "SUSAN—A New Approach to Low Level Image Processing",
+    "first_author": "Stephen M. Smith",
+    "year": 1997,
+    "doi": "10.1023/a:1007963824710",
+    "url": "https://doi.org/10.1023/a:1007963824710",
+    "venue": "International Journal of Computer Vision",
+    "s2_id": "3a891df6349236ace22780bec4951a88af785fdf",
+    "citation_count": 3762
+  },
+  {
+    "id": "CROSS-17",
+    "modality": "Cross-modality",
+    "level": 1,
+    "title": "The rician distribution of noisy mri data",
+    "first_author": "H. Gudbjartsson",
+    "year": 1995,
+    "doi": "10.1002/mrm.1910340618",
+    "url": "https://doi.org/10.1002/mrm.1910340618",
+    "venue": "Magnetic Resonance in Medicine",
+    "s2_id": "91bf9dca5d10430f0cf3b138153d316540e9c89c",
+    "citation_count": 2747
+  },
+  {
+    "id": "CROSS-18",
+    "modality": "Cross-modality",
+    "level": 1,
+    "title": "Evaluation of 14 nonlinear deformation algorithms applied to human brain MRI registration",
+    "first_author": "A. Klein",
+    "year": 2009,
+    "doi": "10.1016/j.neuroimage.2008.12.037",
+    "url": "https://doi.org/10.1016/j.neuroimage.2008.12.037",
+    "venue": "NeuroImage",
+    "s2_id": "6d2669ebc27f776d940ca95db0ad4ae455316cf2",
+    "citation_count": 2376
+  },
+  {
+    "id": "CROSS-19",
+    "modality": "Cross-modality",
+    "level": 1,
+    "title": "Independent Component Analysis Using an Extended Infomax Algorithm for Mixed Subgaussian and Supergaussian Sources",
+    "first_author": "Te-Won Lee",
+    "year": 1999,
+    "doi": "10.1162/089976699300016719",
+    "url": "https://doi.org/10.1162/089976699300016719",
+    "venue": "Neural Computation",
+    "s2_id": "642f41bc18b36dead2b85e45a93bcfb8379224a2",
+    "citation_count": 1969
+  },
+  {
+    "id": "CROSS-20",
+    "modality": "Cross-modality",
+    "level": 1,
+    "title": "10/20, 10/10, and 10/5 systems revisited: Their validity as relative head-surface-based positioning systems",
+    "first_author": "V. Jurcak",
+    "year": 2007,
+    "doi": "10.1016/j.neuroimage.2006.09.024",
+    "url": "https://doi.org/10.1016/j.neuroimage.2006.09.024",
+    "venue": "NeuroImage",
+    "s2_id": "94dc84d846b91e18cbb3bf9c2caf394aec3a22cf",
+    "citation_count": 1480
+  },
+  {
+    "id": "CROSS-21",
+    "modality": "Cross-modality",
+    "level": 1,
+    "title": "Image processing and Quality Control for the first 10,000 brain imaging datasets from UK Biobank",
+    "first_author": "F. Alfaro-Almagro",
+    "year": 2017,
+    "doi": "10.1016/j.neuroimage.2017.10.034",
+    "url": "https://doi.org/10.1016/j.neuroimage.2017.10.034",
+    "venue": "bioRxiv",
+    "s2_id": "ecf167b878fd90807bd6958e99373f898dc0e28f",
+    "citation_count": 1452
+  },
+  {
+    "id": "CROSS-22",
+    "modality": "Cross-modality",
+    "level": 1,
+    "title": "Nonlinear anisotropic filtering of MRI data",
+    "first_author": "G. Gerig",
+    "year": 1992,
+    "doi": "10.1109/42.141646",
+    "url": "https://doi.org/10.1109/42.141646",
+    "venue": "IEEE Trans. Medical Imaging",
+    "s2_id": "e19d7045599b2a0bb975789d8f7593ebdfddfee0",
+    "citation_count": 1328
+  },
+  {
+    "id": "CROSS-23",
+    "modality": "Cross-modality",
+    "level": 1,
+    "title": "Image processing and analysis methods for the Adolescent Brain Cognitive Development Study",
+    "first_author": "D. Hagler",
+    "year": 2018,
+    "doi": "10.1101/457739",
+    "url": "https://doi.org/10.1101/457739",
+    "venue": "bioRxiv",
+    "s2_id": "5f5e274d4040c0881ee5cb3d9eb6813edd850683",
+    "citation_count": 1015
+  },
+  {
+    "id": "CROSS-24",
+    "modality": "Cross-modality",
+    "level": 1,
+    "title": "Comparison of Interpolating Methods for Image Resampling",
+    "first_author": "J. Parker",
+    "year": 1983,
+    "doi": "10.1109/tmi.1983.4307610",
+    "url": "https://doi.org/10.1109/tmi.1983.4307610",
+    "venue": "IEEE Transactions on Medical Imaging",
+    "s2_id": "0e8e79be5d6bfe509611f469a7f551f9c87fa1a1",
+    "citation_count": 915
+  },
+  {
+    "id": "CROSS-25",
+    "modality": "Cross-modality",
+    "level": 1,
+    "title": "Image Segmentation",
+    "first_author": "F. Shih",
+    "year": 2007,
+    "doi": "10.1007/978-0-387-39940-9_1011",
+    "url": "https://doi.org/10.1007/978-0-387-39940-9_1011",
+    "venue": "Encyclopedia of Database Systems",
+    "s2_id": "abffc705d611f3b7451900e9e5a5b805907654d0",
+    "citation_count": 756
+  },
+  {
+    "id": "CROSS-26",
+    "modality": "Cross-modality",
+    "level": 1,
+    "title": "A versatile wavelet domain noise filtration technique for medical imaging",
+    "first_author": "A. Pižurica",
+    "year": 2003,
+    "doi": "10.1109/tmi.2003.809588",
+    "url": "https://doi.org/10.1109/tmi.2003.809588",
+    "venue": "IEEE Transactions on Medical Imaging",
+    "s2_id": "9f2f648e544a3f60b00bc68dfcbdcf08eb851d63",
+    "citation_count": 588
+  },
+  {
+    "id": "CROSS-27",
+    "modality": "Cross-modality",
+    "level": 1,
+    "title": "SimpleITK Image-Analysis Notebooks: a Collaborative Environment for Education and Reproducible Research",
+    "first_author": "Z. Yaniv",
+    "year": 2017,
+    "doi": "10.1007/s10278-017-0037-8",
+    "url": "https://doi.org/10.1007/s10278-017-0037-8",
+    "venue": "Journal of digital imaging",
+    "s2_id": "8882b1a1c507e07df8bd3ec0c857e80f5c7f90a1",
+    "citation_count": 453
+  },
+  {
+    "id": "CROSS-28",
+    "modality": "Cross-modality",
+    "level": 1,
+    "title": "Relevance of accurate Monte Carlo modeling in nuclear medical imaging.",
+    "first_author": "H. Zaidi",
+    "year": 1999,
+    "doi": "10.1118/1.598559",
+    "url": "https://doi.org/10.1118/1.598559",
+    "venue": "Medical Physics (Lancaster)",
+    "s2_id": "3b0b6c95c0187454aa2af06fd16ac0de49f6eb13",
+    "citation_count": 291
   }
 ]

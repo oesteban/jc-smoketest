@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T10:59:52Z",
+  "generated_at": "2026-07-02T15:17:36Z",
   "params": {
     "active_claim_cap": 3,
     "pool_close_threshold": 5,
@@ -7,12 +7,12 @@
     "deadline_days": 12
   },
   "totals": {
-    "papers": 228,
+    "papers": 234,
     "done": 0,
     "closed": 0,
-    "open": 228,
+    "open": 234,
     "reviews_completed": 0,
-    "total_outstanding": 684
+    "total_outstanding": 702
   },
   "papers": {
     "EEG-R1": {
@@ -32,6 +32,14 @@
       "outstanding_need": 3
     },
     "EEG-R3": {
+      "modality": "EEG",
+      "level": 0,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "EEG-R4": {
       "modality": "EEG",
       "level": 0,
       "live_claims": 0,
@@ -279,6 +287,14 @@
       "status": "open",
       "outstanding_need": 3
     },
+    "EEG-31": {
+      "modality": "EEG",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
     "MEG-R1": {
       "modality": "MEG",
       "level": 0,
@@ -288,14 +304,6 @@
       "outstanding_need": 3
     },
     "MEG-R2": {
-      "modality": "MEG",
-      "level": 0,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "MEG-R3": {
       "modality": "MEG",
       "level": 0,
       "live_claims": 0,
@@ -399,54 +407,6 @@
       "status": "open",
       "outstanding_need": 3
     },
-    "MEG-13": {
-      "modality": "MEG",
-      "level": 1,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "MEG-14": {
-      "modality": "MEG",
-      "level": 1,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "MEG-15": {
-      "modality": "MEG",
-      "level": 1,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "MEG-16": {
-      "modality": "MEG",
-      "level": 1,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "MEG-17": {
-      "modality": "MEG",
-      "level": 1,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "MEG-18": {
-      "modality": "MEG",
-      "level": 1,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
     "FMRI-R1": {
       "modality": "fMRI",
       "level": 0,
@@ -456,14 +416,6 @@
       "outstanding_need": 3
     },
     "FMRI-R2": {
-      "modality": "fMRI",
-      "level": 0,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "FMRI-R3": {
       "modality": "fMRI",
       "level": 0,
       "live_claims": 0,
@@ -591,70 +543,6 @@
       "status": "open",
       "outstanding_need": 3
     },
-    "FMRI-16": {
-      "modality": "fMRI",
-      "level": 1,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "FMRI-17": {
-      "modality": "fMRI",
-      "level": 1,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "FMRI-18": {
-      "modality": "fMRI",
-      "level": 1,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "FMRI-19": {
-      "modality": "fMRI",
-      "level": 1,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "FMRI-20": {
-      "modality": "fMRI",
-      "level": 1,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "FMRI-21": {
-      "modality": "fMRI",
-      "level": 1,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "FMRI-22": {
-      "modality": "fMRI",
-      "level": 1,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "FMRI-23": {
-      "modality": "fMRI",
-      "level": 1,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
     "DMRI-R1": {
       "modality": "dMRI",
       "level": 0,
@@ -664,14 +552,6 @@
       "outstanding_need": 3
     },
     "DMRI-R2": {
-      "modality": "dMRI",
-      "level": 0,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "DMRI-R3": {
       "modality": "dMRI",
       "level": 0,
       "live_claims": 0,
@@ -752,102 +632,6 @@
       "outstanding_need": 3
     },
     "DMRI-10": {
-      "modality": "dMRI",
-      "level": 1,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "DMRI-11": {
-      "modality": "dMRI",
-      "level": 1,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "DMRI-12": {
-      "modality": "dMRI",
-      "level": 1,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "DMRI-13": {
-      "modality": "dMRI",
-      "level": 1,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "DMRI-14": {
-      "modality": "dMRI",
-      "level": 1,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "DMRI-15": {
-      "modality": "dMRI",
-      "level": 1,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "DMRI-16": {
-      "modality": "dMRI",
-      "level": 1,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "DMRI-17": {
-      "modality": "dMRI",
-      "level": 1,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "DMRI-18": {
-      "modality": "dMRI",
-      "level": 1,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "DMRI-19": {
-      "modality": "dMRI",
-      "level": 1,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "DMRI-20": {
-      "modality": "dMRI",
-      "level": 1,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "DMRI-21": {
-      "modality": "dMRI",
-      "level": 1,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "DMRI-22": {
       "modality": "dMRI",
       "level": 1,
       "live_claims": 0,
@@ -1119,6 +903,78 @@
       "status": "open",
       "outstanding_need": 3
     },
+    "ANAT-31": {
+      "modality": "anatMRI",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "ANAT-32": {
+      "modality": "anatMRI",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "ANAT-33": {
+      "modality": "anatMRI",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "ANAT-34": {
+      "modality": "anatMRI",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "ANAT-35": {
+      "modality": "anatMRI",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "ANAT-36": {
+      "modality": "anatMRI",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "ANAT-37": {
+      "modality": "anatMRI",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "ANAT-38": {
+      "modality": "anatMRI",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "ANAT-39": {
+      "modality": "anatMRI",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
     "PET-R1": {
       "modality": "PET",
       "level": 0,
@@ -1136,6 +992,14 @@
       "outstanding_need": 3
     },
     "PET-R3": {
+      "modality": "PET",
+      "level": 0,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "PET-R4": {
       "modality": "PET",
       "level": 0,
       "live_claims": 0,
@@ -1330,62 +1194,6 @@
     "PET-24": {
       "modality": "PET",
       "level": 1,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "PET-25": {
-      "modality": "PET",
-      "level": 1,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "PET-26": {
-      "modality": "PET",
-      "level": 1,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "PET-27": {
-      "modality": "PET",
-      "level": 1,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "PET-28": {
-      "modality": "PET",
-      "level": 1,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "PET-29": {
-      "modality": "PET",
-      "level": 1,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "PET-30": {
-      "modality": "PET",
-      "level": 1,
-      "live_claims": 0,
-      "completed_reviews": 0,
-      "status": "open",
-      "outstanding_need": 3
-    },
-    "SPECT-R1": {
-      "modality": "SPECT",
-      "level": 0,
       "live_claims": 0,
       "completed_reviews": 0,
       "status": "open",
@@ -1663,6 +1471,46 @@
       "status": "open",
       "outstanding_need": 3
     },
+    "CT-22": {
+      "modality": "CT",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "CT-23": {
+      "modality": "CT",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "CT-24": {
+      "modality": "CT",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "CT-25": {
+      "modality": "CT",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "CT-26": {
+      "modality": "CT",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
     "FNIRS-R1": {
       "modality": "fNIRS",
       "level": 0,
@@ -1815,24 +1663,224 @@
       "status": "open",
       "outstanding_need": 3
     },
-    "FNIRS-17": {
-      "modality": "fNIRS",
+    "CROSS-01": {
+      "modality": "Cross-modality",
       "level": 1,
       "live_claims": 0,
       "completed_reviews": 0,
       "status": "open",
       "outstanding_need": 3
     },
-    "FNIRS-18": {
-      "modality": "fNIRS",
+    "CROSS-02": {
+      "modality": "Cross-modality",
       "level": 1,
       "live_claims": 0,
       "completed_reviews": 0,
       "status": "open",
       "outstanding_need": 3
     },
-    "FNIRS-19": {
-      "modality": "fNIRS",
+    "CROSS-03": {
+      "modality": "Cross-modality",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "CROSS-04": {
+      "modality": "Cross-modality",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "CROSS-05": {
+      "modality": "Cross-modality",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "CROSS-06": {
+      "modality": "Cross-modality",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "CROSS-07": {
+      "modality": "Cross-modality",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "CROSS-08": {
+      "modality": "Cross-modality",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "CROSS-09": {
+      "modality": "Cross-modality",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "CROSS-10": {
+      "modality": "Cross-modality",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "CROSS-11": {
+      "modality": "Cross-modality",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "CROSS-12": {
+      "modality": "Cross-modality",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "CROSS-13": {
+      "modality": "Cross-modality",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "CROSS-14": {
+      "modality": "Cross-modality",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "CROSS-15": {
+      "modality": "Cross-modality",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "CROSS-16": {
+      "modality": "Cross-modality",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "CROSS-17": {
+      "modality": "Cross-modality",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "CROSS-18": {
+      "modality": "Cross-modality",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "CROSS-19": {
+      "modality": "Cross-modality",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "CROSS-20": {
+      "modality": "Cross-modality",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "CROSS-21": {
+      "modality": "Cross-modality",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "CROSS-22": {
+      "modality": "Cross-modality",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "CROSS-23": {
+      "modality": "Cross-modality",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "CROSS-24": {
+      "modality": "Cross-modality",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "CROSS-25": {
+      "modality": "Cross-modality",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "CROSS-26": {
+      "modality": "Cross-modality",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "CROSS-27": {
+      "modality": "Cross-modality",
+      "level": 1,
+      "live_claims": 0,
+      "completed_reviews": 0,
+      "status": "open",
+      "outstanding_need": 3
+    },
+    "CROSS-28": {
+      "modality": "Cross-modality",
       "level": 1,
       "live_claims": 0,
       "completed_reviews": 0,

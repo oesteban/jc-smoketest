@@ -43,10 +43,17 @@ MODALITY_PREFIX = {
     "SPECT": "SPECT",
     "CT": "CT",
     "fNIRS": "FNIRS",
+    # 10th category: modality-agnostic methods (registration, segmentation, denoising,
+    # tooling) that apply across modalities. Directly populated — no seed reviews.
+    "Cross-modality": "CROSS",
 }
 
 # Canonical modality display order (for the pool browser + docs).
-MODALITY_ORDER = ["EEG", "MEG", "fMRI", "dMRI", "anatMRI", "PET", "SPECT", "CT", "fNIRS"]
+MODALITY_ORDER = ["EEG", "MEG", "fMRI", "dMRI", "anatMRI", "PET", "SPECT", "CT", "fNIRS",
+                  "Cross-modality"]
+
+# Categories with no level-0 seed reviews — pooled flat from their members.
+NO_SEED_MODALITIES = {"Cross-modality"}
 
 
 def weighted_score(axes):

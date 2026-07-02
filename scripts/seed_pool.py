@@ -17,7 +17,7 @@ import argparse
 import json
 from pathlib import Path
 
-from params import MODALITY_ORDER, MODALITY_PREFIX
+from params import MODALITY_ORDER, MODALITY_PREFIX, NO_SEED_MODALITIES
 
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parent
@@ -48,14 +48,29 @@ def record(item: dict, pool_id: str, level: int) -> dict:
     }
 
 
+def _on_topic(item: dict) -> bool:
+    # drop only items the modality audit explicitly marked off-topic; absent = kept
+    return item.get("on_topic", True) is not False
+
+
 def build_pool(source: Path) -> list[dict]:
     children = json.loads((source / "children.json").read_text())
     candidates = json.loads((source / "candidates.json").read_text())
-    reviews = [c for c in candidates if c.get("selected")]
+    reviews = [c for c in candidates if c.get("selected") and _on_topic(c)]
+    children = [c for c in children if _on_topic(c)]
 
     pool: list[dict] = []
     for modality in MODALITY_ORDER:
         prefix = MODALITY_PREFIX[modality]
+
+        # no-seed categories (e.g. Cross-modality): pool members flat, no level-0 elders
+        if modality in NO_SEED_MODALITIES:
+            members = [c for c in children if c["modality"] == modality] + \
+                      [r for r in reviews if r["modality"] == modality]
+            members.sort(key=lambda c: (-(c.get("citationCount") or 0), c["paperId"]))
+            for i, m in enumerate(members, start=1):
+                pool.append(record(m, f"{prefix}-{i:02d}", level=1))
+            continue
 
         # level-0 seed reviews, ordered by the curation rank then citations
         mod_reviews = sorted(
