@@ -23,10 +23,8 @@ concurrency:
 
 jobs:
   dispatch:
-    # ignore comments on non-claim issues and the bot's own comments
-    if: >
-      github.event_name == 'issues' ||
-      (github.event_name == 'issue_comment' && github.actor != 'github-actions[bot]')
+    # never react to the bot's own actions (its comments, its auto-close on recall)
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -66,6 +64,19 @@ jobs:
               subprocess.run(["gh","issue","edit",n,"--add-label",lb], check=False)
           for who in a["assignees"]:
               subprocess.run(["gh","issue","edit",n,"--add-assignee",who], check=False)
+          PY
+
+      - name: Close the issue if a recall emptied the thread
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python - <<'PY'
+          import json, subprocess
+          a = json.load(open("actions.json"))
+          if a.get("close"):
+              subprocess.run(["gh", "issue", "close", str(a["issue"]), "--comment",
+                              "You recalled your last active paper — closing this claim "
+                              "thread. Open a new claim anytime."], check=False)
           PY
 
       - name: Commit + push state (rebase-retry loop)

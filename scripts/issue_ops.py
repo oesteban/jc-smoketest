@@ -120,6 +120,7 @@ def handle_event(event: dict) -> dict:
     now = state.now_utc()
     out = state.Outcome()
     accepted_modalities: set[str] = set()
+    recalled_ok = False
     for cmd, ids in commands:
         if not ids:
             continue
@@ -127,6 +128,7 @@ def handle_event(event: dict) -> dict:
             r = state.apply_claim(pool, claims, claim, ids, now)
         elif cmd == "recall":
             r = state.apply_recall(claim, ids)
+            recalled_ok = recalled_ok or bool(r.ok)
         elif cmd == "submit":
             r = state.apply_submit(claim, ids)
         elif cmd == "extend":
@@ -143,6 +145,10 @@ def handle_event(event: dict) -> dict:
     claims = state.load_claims()
     state.write_status(pool, claims)
 
+    # a successful recall that empties the thread of in-flight papers closes the issue
+    inflight = sum(1 for r in claim["papers"].values() if r["state"] in state.IN_FLIGHT)
+    close_issue = recalled_ok and inflight == 0
+
     add_labels = ["claim"] + [f"mod:{m}" for m in sorted(accepted_modalities)]
     return {
         "comment": out.comment(author),
@@ -150,6 +156,7 @@ def handle_event(event: dict) -> dict:
         "assignees": [author],
         "issue": issue,
         "changed": True,
+        "close": close_issue,
     }
 
 
@@ -166,6 +173,7 @@ def main() -> None:
         "add_labels": result["add_labels"],
         "assignees": result["assignees"],
         "changed": result["changed"],
+        "close": result.get("close", False),
     }, indent=2) + "\n")
     print(f"issue-ops: issue={result['issue']} changed={result['changed']} "
           f"labels={result['add_labels']}")
