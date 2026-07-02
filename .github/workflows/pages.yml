@@ -1,0 +1,44 @@
+name: Deploy site to GitHub Pages
+
+# Builds and deploys the pool browser + leaderboard (docs/) via GitHub Actions so we
+# can generate docs/data/site.json from the repo slug AT BUILD TIME — it is never
+# committed to git. Set Settings → Pages → Source to "GitHub Actions" for this to serve.
+#
+# Runs on every push that touches docs/ (the state workflows commit docs/data/*.json,
+# which triggers a redeploy with a freshly-generated site.json).
+
+on:
+  push:
+    branches: [main]
+    paths: ['docs/**', '.github/workflows/pages.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate site.json from the repo slug (build-time; not tracked in git)
+        run: |
+          mkdir -p docs/data
+          printf '{"repo":"%s"}\n' "${{ github.repository }}" > docs/data/site.json
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - id: deployment
+        uses: actions/deploy-pages@v4

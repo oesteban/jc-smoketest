@@ -3,9 +3,9 @@
 
 // Which GitHub repo the "Claim" buttons target. Precedence:
 //   1. window.JC_REPO — explicit override (index.html);
-//   2. data/site.json {"repo": "..."} — stamped at build time from
-//      ${{ github.repository }} by every workflow run (applied in load());
-//   3. the official repo, as a last resort (before site.json exists, or local preview).
+//   2. data/site.json {"repo": "..."} — generated from ${{ github.repository }} at
+//      GitHub Pages BUILD time by .github/workflows/pages.yml; never committed to git;
+//   3. the official repo, as a last resort (no build yet, or local file:// preview).
 const OFFICIAL = "indos-costaction/journal-club";
 let REPO = window.JC_REPO || OFFICIAL;   // refined from data/site.json in load()
 

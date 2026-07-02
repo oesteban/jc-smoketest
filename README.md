@@ -41,7 +41,9 @@ See [`RULES.md`](RULES.md).
 ## Setup (one-time, for organizers)
 
 1. Create the public repo `indos-costaction/journal-club`; push this tree.
-2. `Settings → Pages → Deploy from a branch → main → /docs`.
+2. `Settings → Pages → Source → GitHub Actions` (the `pages.yml` workflow builds and
+   deploys `docs/`, generating `docs/data/site.json` from the repo slug at build time —
+   it is never committed).
 3. `Settings → Actions → General → Workflow permissions → Read and write`.
 4. Add repo **variable** `ORGANIZERS` = comma-separated GitHub handles (default: `oesteban,guiomarniso`).
 5. Re-seed the pool if the lit-db changes: `python scripts/seed_pool.py --source /path/to/references/lit-db`.

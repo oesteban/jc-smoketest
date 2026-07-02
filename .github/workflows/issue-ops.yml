@@ -84,9 +84,8 @@ jobs:
         run: |
           git config user.name  'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          printf '{"repo":"%s"}\n' "${{ github.repository }}" > docs/data/site.json
           # nothing to commit -> exit cleanly
-          git add claims docs/data/status.json docs/data/site.json
+          git add claims docs/data/status.json
           if git diff --cached --quiet; then echo "no state change"; exit 0; fi
           git commit -m "jc: issue #${{ github.event.issue.number }} state update"
           for i in 1 2 3 4 5; do
@@ -96,8 +95,7 @@ jobs:
             # re-apply intent on top of the freshly-fetched state, then re-commit
             git reset --hard origin/${GITHUB_REF#refs/heads/}
             ORGANIZERS='${{ vars.ORGANIZERS }}' python scripts/issue_ops.py
-            printf '{"repo":"%s"}\n' "${{ github.repository }}" > docs/data/site.json
-            git add claims docs/data/status.json docs/data/site.json
+            git add claims docs/data/status.json
             git diff --cached --quiet && exit 0
             git commit -m "jc: issue #${{ github.event.issue.number }} state update (retry $i)"
             sleep $((RANDOM % 5 + 1))

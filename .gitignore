@@ -3,5 +3,8 @@ notifications.json
 comment.md
 actions.json
 
+# Generated from the repo slug at Pages build time (pages.yml) — never tracked
+docs/data/site.json
+
 __pycache__/
 *.pyc

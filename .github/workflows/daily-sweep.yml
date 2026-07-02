@@ -47,8 +47,7 @@ jobs:
         run: |
           git config user.name  'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          printf '{"repo":"%s"}\n' "${{ github.repository }}" > docs/data/site.json
-          git add claims docs/data/status.json docs/data/ranking.json docs/data/site.json
+          git add claims docs/data/status.json docs/data/ranking.json
           git diff --cached --quiet && { echo "no changes"; exit 0; }
           git commit -m "jc: daily sweep $(date -u +%Y-%m-%d)"
           git push origin HEAD:${GITHUB_REF#refs/heads/}
