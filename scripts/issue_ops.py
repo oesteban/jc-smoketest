@@ -1,0 +1,152 @@
+#!/usr/bin/env python3
+"""Issue-ops dispatcher — the single entrypoint ``issue-ops.yml`` runs.
+
+Parses a GitHub ``issues`` (claim form) or ``issue_comment`` (`/claim` `/recall`
+`/submit` `/extend`) event, validates + applies it against freshly-loaded state,
+and writes:
+
+* the updated ``claims/<issue>.json`` + regenerated ``data/status.json``;
+* ``comment.md``   — the reply body the workflow posts (GitHub then emails the author);
+* ``actions.json`` — {issue, add_labels, assignees} the workflow applies via ``gh``.
+
+No network calls here, so ``handle_event`` is unit-testable with a plain dict.
+Identity: only the issue author (or an organizer) may drive a claim thread.
+"""
+from __future__ import annotations
+
+import json
+import os
+import re
+from pathlib import Path
+
+import params
+import state
+
+# Organizers may act on any claim thread (e.g. administrative recall). Override
+# with the ORGANIZERS env var (comma-separated GitHub handles).
+ORGANIZERS = set(filter(None, os.environ.get(
+    "ORGANIZERS", "oesteban,guiomarniso").lower().split(",")))
+
+ID_RE = re.compile(r"\b([A-Za-z]+-R?\d+)\b")
+CMD_RE = re.compile(r"/(claim|recall|submit|extend)\s+([^\n]*)", re.IGNORECASE)
+
+
+def _ids(segment: str) -> list[str]:
+    return [m.group(1).upper() for m in ID_RE.finditer(segment)]
+
+
+def _detect_attribution(body: str) -> str:
+    # issue-form dropdown renders the chosen value as plain text
+    return "anonymous" if re.search(r"\banonymous\b", body, re.IGNORECASE) else "attributed"
+
+
+def _detect_consent(body: str) -> bool:
+    # a ticked GitHub-form checkbox renders as "- [x] ..."
+    return bool(re.search(r"-\s*\[x\]", body, re.IGNORECASE))
+
+
+def handle_event(event: dict) -> dict:
+    """Return {comment, add_labels, assignees, issue, changed}. Mutates + persists
+    the claim file when a command applies."""
+    name = event.get("event_name")
+    pool = state.load_pool()
+    claims = state.load_claims()
+
+    if name == "issues":
+        issue = event["issue"]["number"]
+        author = event["issue"]["user"]["login"].lower()
+        body = event["issue"].get("body") or ""
+        actor = author
+        commands = [("claim", _ids(body))]
+        attribution = _detect_attribution(body)
+        consent = _detect_consent(body)
+    elif name == "issue_comment":
+        issue = event["issue"]["number"]
+        author = event["issue"]["user"]["login"].lower()
+        actor = event["comment"]["user"]["login"].lower()
+        body = event["comment"].get("body") or ""
+        commands = [(m.group(1).lower(), _ids(m.group(2))) for m in CMD_RE.finditer(body)]
+        attribution = None
+        consent = None
+    else:
+        return {"comment": "", "add_labels": [], "assignees": [], "issue": None, "changed": False}
+
+    if not commands or all(not ids for _c, ids in commands):
+        return {"comment": "", "add_labels": [], "assignees": [], "issue": issue, "changed": False}
+
+    # identity barrier
+    if actor != author and actor not in ORGANIZERS:
+        return {"comment": (f"@{actor} only the thread's owner (@{author}) or an organizer "
+                            f"can run claim commands here."),
+                "add_labels": [], "assignees": [], "issue": issue, "changed": False}
+
+    claim = claims.get(issue) or state.new_claim(issue, author)
+    if attribution:
+        claim["attribution"] = attribution
+    if consent is not None and consent and not claim["consent"]["gdpr"]:
+        claim["consent"] = {"gdpr": True, "at": state.iso(state.now_utc())}
+    claims[issue] = claim
+
+    # GDPR gate: a first claim requires consent (the form makes the box required)
+    is_claim = any(c == "claim" for c, _ in commands)
+    if is_claim and not claim["consent"]["gdpr"]:
+        return {"comment": ("❌ We can't record a claim without the consent checkbox ticked. "
+                            "Please edit the issue and confirm consent (see `CONSENT.md`)."),
+                "add_labels": [], "assignees": [], "issue": issue, "changed": False}
+
+    now = state.now_utc()
+    out = state.Outcome()
+    accepted_modalities: set[str] = set()
+    for cmd, ids in commands:
+        if not ids:
+            continue
+        if cmd == "claim":
+            r = state.apply_claim(pool, claims, claim, ids, now)
+        elif cmd == "recall":
+            r = state.apply_recall(claim, ids)
+        elif cmd == "submit":
+            r = state.apply_submit(claim, ids)
+        elif cmd == "extend":
+            r = state.apply_extend(claim, ids, now)
+        else:
+            continue
+        out.ok += r.ok
+        out.rejected += r.rejected
+        if cmd == "claim":
+            accepted_modalities |= {pool[i]["modality"] for i in claim["papers"]
+                                    if pool[i]["modality"]}
+
+    state.save_claim(claim)
+    claims = state.load_claims()
+    state.write_status(pool, claims)
+
+    add_labels = ["claim"] + [f"mod:{m}" for m in sorted(accepted_modalities)]
+    return {
+        "comment": out.comment(author),
+        "add_labels": add_labels,
+        "assignees": [author],
+        "issue": issue,
+        "changed": True,
+    }
+
+
+def main() -> None:
+    event_path = os.environ.get("GITHUB_EVENT_PATH")
+    event = json.loads(Path(event_path).read_text()) if event_path else {}
+    event.setdefault("event_name", os.environ.get("GITHUB_EVENT_NAME", ""))
+
+    result = handle_event(event)
+
+    (state.REPO / "comment.md").write_text(result["comment"] + ("\n" if result["comment"] else ""))
+    (state.REPO / "actions.json").write_text(json.dumps({
+        "issue": result["issue"],
+        "add_labels": result["add_labels"],
+        "assignees": result["assignees"],
+        "changed": result["changed"],
+    }, indent=2) + "\n")
+    print(f"issue-ops: issue={result['issue']} changed={result['changed']} "
+          f"labels={result['add_labels']}")
+
+
+if __name__ == "__main__":
+    main()
