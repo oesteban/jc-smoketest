@@ -42,6 +42,7 @@ async function load() {
   if (!window.JC_REPO && site && site.repo) REPO = site.repo;
   $("#claimTop").href = newIssueURL(null);
   initModalities();
+  applyFiltersFromURL();   // after the modality options exist, so they can be matched
   renderProgress();
   renderPool();
   renderBoard();
@@ -118,13 +119,37 @@ function renderBoard() {
   }
 }
 
+// Pool filters are mirrored in the URL query string (?modality=&status=&need=1)
+// so they persist on reload and the view is shareable.
+function applyFiltersFromURL() {
+  const p = new URLSearchParams(location.search);
+  const mod = p.get("modality");
+  if (mod) {
+    const opt = [...$("#modality").options].find(o => o.value.toLowerCase() === mod.toLowerCase());
+    if (opt) $("#modality").value = opt.value;
+  }
+  const st = (p.get("status") || "").toLowerCase();
+  if ([...$("#status").options].some(o => o.value === st)) $("#status").value = st;
+  $("#needy").checked = p.get("need") === "1";
+}
+
+function syncFiltersToURL() {
+  const p = new URLSearchParams();
+  if ($("#modality").value) p.set("modality", $("#modality").value);
+  if ($("#status").value) p.set("status", $("#status").value);
+  if ($("#needy").checked) p.set("need", "1");
+  const qs = p.toString();
+  history.replaceState(null, "", (qs ? "?" + qs : location.pathname) + location.hash);
+}
+
 // tabs + controls
 document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click", () => {
   document.querySelectorAll(".tabs button").forEach(x => x.classList.toggle("active", x === b));
   $("#pool").hidden = b.dataset.tab !== "pool";
   $("#board").hidden = b.dataset.tab !== "board";
 }));
-["#search", "#modality", "#status", "#needy"].forEach(s =>
-  $(s).addEventListener("input", renderPool));
+["#modality", "#status", "#needy"].forEach(s =>
+  $(s).addEventListener("input", () => { syncFiltersToURL(); renderPool(); }));
+$("#search").addEventListener("input", renderPool);  // search stays out of the URL
 
 load().catch(e => { $("#poolCount").textContent = "Could not load data: " + e; });
