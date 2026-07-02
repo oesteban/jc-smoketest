@@ -1,23 +1,32 @@
 "use strict";
 // Client-only renderer. Reads the three JSONs the Actions regenerate; no build step.
 
-// Which GitHub repo the "Claim" buttons point at. A GitHub Pages *project page*
-// URL (https://<owner>.github.io/<repo>/) already encodes this, so we derive it at
-// runtime — the site self-targets in any fork, no build-time interpolation needed.
-// Override for the one case inference can't see: a custom domain (set window.JC_REPO
-// in index.html), or local preview.
-function inferRepo() {
-  if (window.JC_REPO) return window.JC_REPO;               // explicit override wins
+// Which GitHub repo the "Claim" buttons target. Precedence:
+//   1. window.JC_REPO — explicit override (index.html), for a custom domain;
+//   2. the GitHub Pages URL when served from *.github.io — self-targets any fork,
+//      no build step (handles both this smoketest and the production project page);
+//   3. data/site.json {"repo": "..."} — stamped at build time from ${{ github.repository }},
+//      the reliable value when the URL no longer encodes the repo (custom domain);
+//   4. the official repo, as a last resort (e.g. local file:// preview).
+const OFFICIAL = "indos-costaction/journal-club";
+function repoFromPagesURL() {
   const m = location.hostname.match(/^([^.]+)\.github\.io$/);
   const seg = location.pathname.split("/").filter(Boolean);
-  if (m && seg.length) return `${m[1]}/${seg[0]}`;         // project page → owner/repo
-  if (m) return `${m[1]}/${m[1]}.github.io`;               // user/org root page
-  return "indos-costaction/journal-club";                  // custom domain / localhost fallback
+  if (m && seg.length) return `${m[1]}/${seg[0]}`;   // project page → owner/repo
+  if (m) return `${m[1]}/${m[1]}.github.io`;          // user/org root page
+  return null;                                        // custom domain / localhost
 }
-const REPO = inferRepo();
-const NEW_ISSUE = id =>
-  `https://github.com/${REPO}/issues/new?template=claim.yml&title=${encodeURIComponent("[claim] ")}` +
-  (id ? `&paper_ids=${encodeURIComponent(id)}` : "");
+let REPO = window.JC_REPO || repoFromPagesURL() || OFFICIAL;
+
+const lastName = a => (a || "").trim().split(/\s+/).pop() || "";
+function issueTitle(p) {
+  return p ? `[claim] ${lastName(p.first_author)} et al. ${p.year} - ${p.title}` : "[claim] ";
+}
+function newIssueURL(p) {
+  const q = new URLSearchParams({ template: "claim.yml", title: issueTitle(p) });
+  if (p) q.set("paper_ids", p.id);
+  return `https://github.com/${REPO}/issues/new?${q}`;
+}
 
 const $ = sel => document.querySelector(sel);
 const el = (tag, props = {}, ...kids) => {
@@ -29,15 +38,18 @@ const el = (tag, props = {}, ...kids) => {
 let POOL = [], STATUS = {}, RANKING = { participants: [] };
 
 async function load() {
-  const [pool, status, ranking] = await Promise.all([
+  const [pool, status, ranking, site] = await Promise.all([
     fetch("data/pool.json").then(r => r.json()),
     fetch("data/status.json").then(r => r.json()),
     fetch("data/ranking.json").then(r => r.json()).catch(() => ({ participants: [] })),
+    fetch("data/site.json").then(r => r.json()).catch(() => null),
   ]);
   POOL = pool;
   STATUS = status;
   RANKING = ranking;
-  $("#claimTop").href = NEW_ISSUE("");
+  // build-time slug only refines REPO when the URL couldn't (custom domain)
+  if (!window.JC_REPO && !repoFromPagesURL() && site && site.repo) REPO = site.repo;
+  $("#claimTop").href = newIssueURL(null);
   initModalities();
   renderProgress();
   renderPool();
@@ -85,7 +97,7 @@ function renderPool() {
       el("div", { className: "meta", textContent: `${p.first_author || ""}${p.year ? " · " + p.year : ""}${p.level === 0 ? " · seed review" : ""}` }));
     const canClaim = s.status === "open";
     const action = canClaim
-      ? el("a", { className: "claim", href: NEW_ISSUE(p.id), textContent: "Claim" })
+      ? el("a", { className: "claim", href: newIssueURL(p), textContent: "Claim" })
       : el("span", { className: "muted", textContent: s.status === "done" ? "—" : "closed" });
     tbody.append(el("tr", {},
       el("td", { textContent: p.id }),
