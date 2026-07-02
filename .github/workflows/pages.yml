@@ -24,6 +24,10 @@ concurrency:
 
 jobs:
   deploy:
+    # Silence the harmless punycode (DEP0040) deprecation warning emitted by
+    # actions/deploy-pages' bundled deps on node24 — cosmetic, not our code.
+    env:
+      NODE_OPTIONS: '--no-deprecation'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
