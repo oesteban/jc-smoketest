@@ -2,21 +2,12 @@
 // Client-only renderer. Reads the three JSONs the Actions regenerate; no build step.
 
 // Which GitHub repo the "Claim" buttons target. Precedence:
-//   1. window.JC_REPO — explicit override (index.html), for a custom domain;
-//   2. the GitHub Pages URL when served from *.github.io — self-targets any fork,
-//      no build step (handles both this smoketest and the production project page);
-//   3. data/site.json {"repo": "..."} — stamped at build time from ${{ github.repository }},
-//      the reliable value when the URL no longer encodes the repo (custom domain);
-//   4. the official repo, as a last resort (e.g. local file:// preview).
+//   1. window.JC_REPO — explicit override (index.html);
+//   2. data/site.json {"repo": "..."} — stamped at build time from
+//      ${{ github.repository }} by every workflow run (applied in load());
+//   3. the official repo, as a last resort (before site.json exists, or local preview).
 const OFFICIAL = "indos-costaction/journal-club";
-function repoFromPagesURL() {
-  const m = location.hostname.match(/^([^.]+)\.github\.io$/);
-  const seg = location.pathname.split("/").filter(Boolean);
-  if (m && seg.length) return `${m[1]}/${seg[0]}`;   // project page → owner/repo
-  if (m) return `${m[1]}/${m[1]}.github.io`;          // user/org root page
-  return null;                                        // custom domain / localhost
-}
-let REPO = window.JC_REPO || repoFromPagesURL() || OFFICIAL;
+let REPO = window.JC_REPO || OFFICIAL;   // refined from data/site.json in load()
 
 const lastName = a => (a || "").trim().split(/\s+/).pop() || "";
 function issueTitle(p) {
@@ -47,8 +38,8 @@ async function load() {
   POOL = pool;
   STATUS = status;
   RANKING = ranking;
-  // build-time slug only refines REPO when the URL couldn't (custom domain)
-  if (!window.JC_REPO && !repoFromPagesURL() && site && site.repo) REPO = site.repo;
+  // build-time slug from site.json is the authoritative repo (unless overridden)
+  if (!window.JC_REPO && site && site.repo) REPO = site.repo;
   $("#claimTop").href = newIssueURL(null);
   initModalities();
   renderProgress();

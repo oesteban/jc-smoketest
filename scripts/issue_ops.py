@@ -45,12 +45,35 @@ def _detect_consent(body: str) -> bool:
     return bool(re.search(r"-\s*\[x\]", body, re.IGNORECASE))
 
 
+def handle_close(issue: int, author: str, claims: dict) -> dict:
+    """Heads-up on issue close — no state change. Silent if nothing is held."""
+    claim = claims.get(issue)
+    held = [pid for pid, r in (claim["papers"].items() if claim else [])
+            if r["state"] in state.IN_FLIGHT]
+    if not held:
+        return {"comment": "", "add_labels": [], "assignees": [], "issue": issue, "changed": False}
+    lst = ", ".join(f"`{p}`" for p in held)
+    verb = "is" if len(held) == 1 else "are"
+    body = (f"ℹ️ @{author} closing this issue does **not** release your claims — "
+            f"{lst} {verb} still active and the 12-day deadline keeps running. "
+            f"To return a paper, comment `/recall <ID>`; to submit, `/submit <ID>`. "
+            f"Reopen this issue to keep working.")
+    return {"comment": body, "add_labels": [], "assignees": [], "issue": issue, "changed": False}
+
+
 def handle_event(event: dict) -> dict:
     """Return {comment, add_labels, assignees, issue, changed}. Mutates + persists
     the claim file when a command applies."""
     name = event.get("event_name")
     pool = state.load_pool()
     claims = state.load_claims()
+
+    if name == "issues" and event.get("action") == "closed":
+        # Closing is non-destructive: we never recall on close (protects against an
+        # accidental close and preserves submitted/graded work). Just a heads-up if
+        # the thread still holds in-flight papers.
+        return handle_close(event["issue"]["number"],
+                            event["issue"]["user"]["login"].lower(), claims)
 
     if name == "issues":
         issue = event["issue"]["number"]
