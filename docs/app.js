@@ -29,11 +29,16 @@ const el = (tag, props = {}, ...kids) => {
 let POOL = [], STATUS = {}, RANKING = { participants: [] };
 
 async function load() {
+  // GitHub Pages serves these with max-age=600, so a plain fetch can show a claim/
+  // recall up to ~10 min stale. Cache-bust the volatile files so a reload is live.
+  // pool.json is static (only changes on reseed) → let it cache normally.
+  const bust = u => `${u}?t=${Date.now()}`;
+  const nostore = { cache: "no-store" };
   const [pool, status, ranking, site] = await Promise.all([
     fetch("data/pool.json").then(r => r.json()),
-    fetch("data/status.json").then(r => r.json()),
-    fetch("data/ranking.json").then(r => r.json()).catch(() => ({ participants: [] })),
-    fetch("data/site.json").then(r => r.json()).catch(() => null),
+    fetch(bust("data/status.json"), nostore).then(r => r.json()),
+    fetch(bust("data/ranking.json"), nostore).then(r => r.json()).catch(() => ({ participants: [] })),
+    fetch(bust("data/site.json"), nostore).then(r => r.json()).catch(() => null),
   ]);
   POOL = pool;
   STATUS = status;
