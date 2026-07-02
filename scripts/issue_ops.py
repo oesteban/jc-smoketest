@@ -120,15 +120,16 @@ def handle_event(event: dict) -> dict:
     now = state.now_utc()
     out = state.Outcome()
     accepted_modalities: set[str] = set()
-    recalled_ok = False
+    attempted = False  # a claim/recall command with ids was processed
     for cmd, ids in commands:
         if not ids:
             continue
         if cmd == "claim":
             r = state.apply_claim(pool, claims, claim, ids, now)
+            attempted = True
         elif cmd == "recall":
             r = state.apply_recall(claim, ids)
-            recalled_ok = recalled_ok or bool(r.ok)
+            attempted = True
         elif cmd == "submit":
             r = state.apply_submit(claim, ids)
         elif cmd == "extend":
@@ -145,9 +146,10 @@ def handle_event(event: dict) -> dict:
     claims = state.load_claims()
     state.write_status(pool, claims)
 
-    # a successful recall that empties the thread of in-flight papers closes the issue
+    # close a claim/recall thread that ends up holding nothing — whether a recall
+    # emptied it or a claim landed nothing (all rejected, e.g. "you already hold this")
     inflight = sum(1 for r in claim["papers"].values() if r["state"] in state.IN_FLIGHT)
-    close_issue = recalled_ok and inflight == 0
+    close_issue = attempted and inflight == 0
 
     add_labels = ["claim"] + [f"mod:{m}" for m in sorted(accepted_modalities)]
     return {

@@ -66,7 +66,7 @@ jobs:
               subprocess.run(["gh","issue","edit",n,"--add-assignee",who], check=False)
           PY
 
-      - name: Close the issue if a recall emptied the thread
+      - name: Close the issue if the thread holds no papers
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -75,8 +75,8 @@ jobs:
           a = json.load(open("actions.json"))
           if a.get("close"):
               subprocess.run(["gh", "issue", "close", str(a["issue"]), "--comment",
-                              "You recalled your last active paper — closing this claim "
-                              "thread. Open a new claim anytime."], check=False)
+                              "No papers are held on this thread — closing it. "
+                              "Open a new claim anytime."], check=False)
           PY
 
       - name: Commit + push state (rebase-retry loop)
