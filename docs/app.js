@@ -1,6 +1,20 @@
 "use strict";
 // Client-only renderer. Reads the three JSONs the Actions regenerate; no build step.
-const REPO = "indos-costaction/journal-club";
+
+// Which GitHub repo the "Claim" buttons point at. A GitHub Pages *project page*
+// URL (https://<owner>.github.io/<repo>/) already encodes this, so we derive it at
+// runtime — the site self-targets in any fork, no build-time interpolation needed.
+// Override for the one case inference can't see: a custom domain (set window.JC_REPO
+// in index.html), or local preview.
+function inferRepo() {
+  if (window.JC_REPO) return window.JC_REPO;               // explicit override wins
+  const m = location.hostname.match(/^([^.]+)\.github\.io$/);
+  const seg = location.pathname.split("/").filter(Boolean);
+  if (m && seg.length) return `${m[1]}/${seg[0]}`;         // project page → owner/repo
+  if (m) return `${m[1]}/${m[1]}.github.io`;               // user/org root page
+  return "indos-costaction/journal-club";                  // custom domain / localhost fallback
+}
+const REPO = inferRepo();
 const NEW_ISSUE = id =>
   `https://github.com/${REPO}/issues/new?template=claim.yml&title=${encodeURIComponent("[claim] ")}` +
   (id ? `&paper_ids=${encodeURIComponent(id)}` : "");
