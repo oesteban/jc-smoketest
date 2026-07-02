@@ -66,7 +66,7 @@ jobs:
               subprocess.run(["gh","issue","edit",n,"--add-assignee",who], check=False)
           PY
 
-      - name: Close the issue if the thread holds no papers
+      - name: Close the issue when nothing needs the participant's action
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -75,7 +75,8 @@ jobs:
           a = json.load(open("actions.json"))
           if a.get("close"):
               subprocess.run(["gh", "issue", "close", str(a["issue"]), "--comment",
-                              "No papers are held on this thread — closing it. "
+                              "Nothing on this thread needs your action — closing it. "
+                              "Submitted papers are with the organizers for grading. "
                               "Open a new claim anytime."], check=False)
           PY
 
