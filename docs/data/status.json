@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T13:26:40Z",
+  "generated_at": "2026-07-02T13:27:39Z",
   "params": {
     "active_claim_cap": 3,
     "pool_close_threshold": 5,
@@ -58,7 +58,7 @@
     "EEG-03": {
       "modality": "EEG",
       "level": 1,
-      "live_claims": 1,
+      "live_claims": 0,
       "completed_reviews": 0,
       "status": "open",
       "outstanding_need": 3
